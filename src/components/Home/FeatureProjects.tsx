@@ -1,20 +1,26 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef, useState, useMemo, useCallback } from "react"
-import Image from "next/image"
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useMemo,
+  useCallback,
+} from "react";
+import Image from "next/image";
 
-import data from "../Constants/hero.json" // Assuming this holds the 'homefeaturedata'
+import data from "../Constants/hero.json"; // Assuming this holds the 'homefeaturedata'
 
 const FeatureProjects: React.FC = () => {
-  const carouselRef = useRef<HTMLDivElement | null>(null)
-  const borderRef = useRef<HTMLDivElement | null>(null)
-  const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null)
-  const [borderWidth, setBorderWidth] = useState("10%")
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const borderRef = useRef<HTMLDivElement | null>(null);
+  const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
+  const [borderWidth, setBorderWidth] = useState("10%");
 
   // Memoize relatedProduct to prevent recalculation on every render
   const relatedProduct = useMemo(() => {
-    return data.find((item) => item.category === "homefeaturedata")?.data
-  }, [])
+    return data.find((item) => item.category === "homefeaturedata")?.data;
+  }, []);
 
   // Memoized scroll functions to avoid re-creation on every render
   const scrollLeft = useCallback(() => {
@@ -22,37 +28,41 @@ const FeatureProjects: React.FC = () => {
       carouselRef.current.scrollBy({
         left: -carouselRef.current.offsetWidth,
         behavior: "smooth",
-      })
+      });
     }
-  }, [])
+  }, []);
 
   const scrollRight = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
         left: carouselRef.current.offsetWidth,
         behavior: "smooth",
-      })
+      });
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       if (carouselRef.current) {
-        const scrollPosition = window.scrollY
-        const triggerStart = carouselRef.current.offsetTop - window.innerHeight * 0.8
-        const triggerEnd = carouselRef.current.offsetTop + carouselRef.current.offsetHeight * 0.7
+        const scrollPosition = window.scrollY;
+        const triggerStart =
+          carouselRef.current.offsetTop - window.innerHeight * 0.8;
+        const triggerEnd =
+          carouselRef.current.offsetTop +
+          carouselRef.current.offsetHeight * 0.7;
 
         if (scrollPosition >= triggerStart && scrollPosition <= triggerEnd) {
-          const progress = (scrollPosition - triggerStart) / (triggerEnd - triggerStart)
-          const newWidth = 10 + progress * 85
-          setBorderWidth(`${Math.min(95, Math.max(10, newWidth))}%`)
+          const progress =
+            (scrollPosition - triggerStart) / (triggerEnd - triggerStart);
+          const newWidth = 10 + progress * 85;
+          setBorderWidth(`${Math.min(95, Math.max(10, newWidth))}%`);
         }
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="w-full h-[35vh] px-10 font-poppins max-w-screen-2xl mx-auto">
@@ -84,14 +94,46 @@ const FeatureProjects: React.FC = () => {
               onClick={scrollLeft}
               aria-label="Scroll Left"
             >
-              &#8592;
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 30 30"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <circle cx="15" cy="15" r="15" fill="black" />
+
+                <path
+                  d="M22 15H8M15 8L8 15L15 22"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
             </button>
             <button
               className="text-[#cccaca] absolute right-16 bottom-2 lg:text-[1.5rem] text-[1.8rem] hover:text-black"
               onClick={scrollRight}
               aria-label="Scroll Right"
             >
-              &#8594;
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 30 30"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <circle cx="15" cy="15" r="15" fill="black" />
+
+                <path
+                  d="M8 15H22M15 8L22 15L15 22"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -162,7 +204,7 @@ const FeatureProjects: React.FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default React.memo(FeatureProjects)
+export default React.memo(FeatureProjects);

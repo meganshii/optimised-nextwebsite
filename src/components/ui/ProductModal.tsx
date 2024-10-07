@@ -21,7 +21,6 @@ const ProductModal: React.FC<ProductModalProps> = ({
   firstname,
   secondname,
 }) => {
-  // Create breadcrumbItems within the component, using title for the dynamic third item.
   const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
@@ -32,7 +31,6 @@ const ProductModal: React.FC<ProductModalProps> = ({
     <>
       <div className="bg-[#F5F5F7] z-[99999] dark:bg-neutral-800 p-8 font-poppins font-regular md:p-14 h-80 rounded-3xl mb-4">
         <div className="fixed inset-0 flex items-center justify-center">
-          <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm"></div>
           <div className="relative w-full max-w-[78rem] h-[90vh] bg-white rounded-xl p-6 transform transition-transform overflow-y-auto z-50">
             <Breadcrumb items={breadcrumbItems} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
@@ -52,6 +50,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                           View All
                         </span>
                         <span className="ml-2 bg-white rounded-full p-1 transition-colors duration-200 group-hover:bg-black">
+                          
                         </span>
                       </Button>
                     </div>
@@ -80,6 +79,5 @@ const ProductModal: React.FC<ProductModalProps> = ({
       </div>
     </>
   );
-};
-
+}
 export default ProductModal;

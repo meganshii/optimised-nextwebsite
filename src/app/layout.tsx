@@ -11,8 +11,6 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-
-
 export default function RootLayout({
   children,
 }: {
@@ -21,11 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Prefetch images */}
         <link
           rel="preload"
+          href="https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
           as="image"
-          href="https://www.nesscoindia.com/Assets/images/banner/banner-image-nessco-2.webp"
-        />
+          />
       </head>
       <body className={`${inter.variable} ${poppins.variable}`}>
         <NavbarDemo />

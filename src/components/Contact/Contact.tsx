@@ -3,13 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-const SignupFormDemo=dynamic(()=>import("./SignupFormDemo"))
+const SignupFormDemo = dynamic(() => import("./SignupFormDemo"));
 interface ContactFormProps {
   isContactFormVisible: boolean;
   setContactFormVisible: (visible: boolean) => void;
   setIsFlagOpen: (flag: boolean) => void;
 }
-
 const ContactForm: React.FC<ContactFormProps> = ({
   isContactFormVisible,
   setContactFormVisible,
@@ -77,7 +76,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
   return (
     <div className="">
-       <button
+      <button
         type="button"
         className="cursor-pointer font-poppins text-sm font-regular rounded-full  bg-clip-padding  custom-gradient-border overflow-hidden transition-all duration-300 group"
         onMouseEnter={handleMouseEnter} // Open on hover

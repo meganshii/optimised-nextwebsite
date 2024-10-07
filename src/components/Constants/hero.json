@@ -70,14 +70,6 @@
           {
             "src": "https://assets.nesscoindustries.com/public/video/BgHome.mp4",
             "type": "video/mp4"
-          },
-          {
-            "src": "https://assets.nesscoindustries.com/public/video/bg.webm",
-            "type": "video/webm"
-          },
-          {
-            "src": "https://assets.nesscoindustries.com/public/video/bg.ogv",
-            "type": "video/ogg"
           }
         ],
 
@@ -1094,7 +1086,19 @@
       ],
       "Testinomialvideos": [
         {
-          "src": "/video/bg.mp4",
+          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
+        },
+        {
+          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
+        },
+        {
+          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
+        },
+        {
+          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
@@ -1102,19 +1106,7 @@
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
-          "src": "/video/iotvideo.mp4",
-          "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
-        },
-        {
-          "src": "/video/bg.mp4",
-          "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
-        },
-        {
-          "src": "/video/Homebg.mp4",
-          "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
-        },
-        {
-          "src": "/video/iotvideo.mp4",
+          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         }
       ],

@@ -19,8 +19,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   }, [initialScroll]);
 
- 
-
   const checkScrollability = () => {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
@@ -67,6 +65,23 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             aria-label="scrollLeft"
             disabled={!canScrollLeft}
           >
+            <svg
+              className="h-6 w-6"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <circle cx="15" cy="15" r="15" fill="black" />
+
+              <path
+                d="M22 15H8M15 8L8 15L15 22"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
           </button>
           <button
             className="relative z-20 h-12 w-12 lg:h-14 lg:w-24 rounded-full flex items-center justify-center disabled:opacity-50"
@@ -74,6 +89,23 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             disabled={!canScrollRight}
             aria-label="scrollRight"
           >
+            <svg
+              className="h-6 w-6"
+              viewBox="0 0 30 30"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <circle cx="15" cy="15" r="15" fill="black" />
+
+              <path
+                d="M8 15H22M15 8L22 15L15 22"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -85,7 +117,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         <div className="flex flex-row justify-start gap-4 lg:pl-4 max-w-7xl mx-auto">
           {items.map((item, index) => (
             <div
-             
               key={"card" + index}
               className="last:pr-[5%] md:last:pr-[2%] rounded-3xl"
             >
@@ -109,7 +140,13 @@ export const Card = ({ src, title, category, date }: CardProps) => {
   return (
     <div className="rounded-2xl bg-white shadow-lg  dark:bg-neutral-900 h-28 w-[18rem] md:h-[5rem] md:w-80 overflow-hidden flex items-center space-x-4 p-2">
       <div className="relative flex-shrink-0 h-12 w-12 md:h-16 md:w-16 rounded-2xl overflow-hidden">
-        <Image src={src} alt={title} height={400} width={400}  className="object-fill" />
+        <Image
+          src={src}
+          alt={title}
+          height={400}
+          width={400}
+          className="object-fill"
+        />
       </div>
       <div className="flex flex-col font-poppins h-16 md:h-16">
         <h3 className="text-black text-base  font-medium">{title}</h3>

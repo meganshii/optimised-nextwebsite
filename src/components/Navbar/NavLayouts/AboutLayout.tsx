@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import Image from "next/image";
-import AnimatedContainer from "@/hooks/AnimatedContainer";
 import data from "../../Constants/Navbar/index.json";
 
 interface NavItem {
@@ -95,7 +94,6 @@ const AboutLayout: React.FC<AboutData> = () => {
       <div className="hidden lg:flex ml-2 w-2 h-72 border-l border-gray-300"></div>
       {/* desktop view */}
       <div className="w-full lg:w-[20vw] h-32 ml-4 lg:h-auto hidden lg:flex flex-col justify-between mt-4 lg:mt-0">
-        <AnimatedContainer currentIndex={currentIndex}>
           {navLeftData
             .slice(currentIndex, currentIndex + 2)
             .map((item: NavItem, index: number) => (
@@ -129,7 +127,6 @@ const AboutLayout: React.FC<AboutData> = () => {
                 </div>
               </a>
             ))}
-        </AnimatedContainer>
         {/* Scroll Buttons */}
         <div className="hidden lg:flex w-full bg-gray-800 justify-center">
           {currentIndex > 0 && (

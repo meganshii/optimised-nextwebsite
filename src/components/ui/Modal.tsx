@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Item } from "../../type"; // Adjust the path according to your file structure
 import Breadcrumb from "./Breadcrumb";
 import dynamic from "next/dynamic";
-const PositionAwareButton =dynamic(()=>import("./PositionAwareButton"))
+const PositionAwareButton = dynamic(() => import("./PositionAwareButton"));
 interface ModalProps {
   image: StaticImageData;
   title?: string; // Optional
@@ -66,7 +66,16 @@ const Modal: React.FC<ModalProps> = ({
           onClick={onClose}
           className="absolute top-4 right-4 text-2xl font-bold text-gray-700"
         >
-          &times;
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 30 30"
+          >
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16.414,15 c0,0,3.139,3.139,3.293,3.293c0.391,0.391,0.391,1.024,0,1.414c-0.391,0.391-1.024,0.391-1.414,0C18.139,19.554,15,16.414,15,16.414 s-3.139,3.139-3.293,3.293c-0.391,0.391-1.024,0.391-1.414,0c-0.391-0.391-0.391-1.024,0-1.414C10.446,18.139,13.586,15,13.586,15 s-3.139-3.139-3.293-3.293c-0.391-0.391-0.391-1.024,0-1.414c0.391-0.391,1.024-0.391,1.414,0C11.861,10.446,15,13.586,15,13.586 s3.139-3.139,3.293-3.293c0.391-0.391,1.024-0.391,1.414,0c0.391,0.391,0.391,1.024,0,1.414C19.554,11.861,16.414,15,16.414,15z"></path>
+          </svg>
         </button>
         <Breadcrumb items={breadcrumbItems} />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
@@ -84,8 +93,16 @@ const Modal: React.FC<ModalProps> = ({
               className="rounded-lg object-contain h-[400px]"
             />
             <div className="flex w-[60%] -ml-14 gap-4 justify-center mt-0">
-              <PositionAwareButton text={"Know Machine"} icon={true} width="180px" />
-              <PositionAwareButton text={"Get a Quote"} icon={true} width="160px" />
+              <PositionAwareButton
+                text={"Know Machine"}
+                icon={true}
+                width="180px"
+              />
+              <PositionAwareButton
+                text={"Get a Quote"}
+                icon={true}
+                width="160px"
+              />
             </div>
           </motion.div>
           <motion.div
@@ -97,10 +114,15 @@ const Modal: React.FC<ModalProps> = ({
               <span className="text-red-600">{firstname}</span>
               <span className="text-[#483d78] ml-2">{secondname}</span>
             </h2>
-            <p className="text-gray-700 text-base font-regular mb-4">{description}</p>
+            <p className="text-gray-700 text-base font-regular mb-4">
+              {description}
+            </p>
             <ul className="list-none grid grid-cols-2 gap-4 text-gray-700">
               {items.map((item, index) => (
-                <li key={index} className="flex text-base font-regular items-center space-x-2">
+                <li
+                  key={index}
+                  className="flex text-base font-regular items-center space-x-2"
+                >
                   {item.icon}
                   <span>{item.text}</span>
                 </li>

@@ -22,11 +22,14 @@ const nextConfig = {
       'lodash',            // Add Lodash for tree shaking
     ],  // List any additional packages you'd like to optimize
   },
+  
 };
 
 // Initialize the bundle analyzer
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
+
+  
 });
 
 // Export the configuration with the bundle analyzer applied

@@ -1,8 +1,10 @@
 import React from "react";
 import data from "../Constants/hero.json";
-import Image from "next/image";
 import { Button } from "../ui/button";
-import FeatureProjects from "./FeatureProjects";
+// import FeatureProjects from "./FeatureProjects";
+import ImageSlider from "../ui/ImageSlider";
+import dynamic from "next/dynamic";
+const FeatureProjects=dynamic(()=>import("./FeatureProjects"))
 const Home: React.FC = () => {
   const homeData = data.find((item) => item.category === "HeroSection")?.data;
   return (
@@ -10,16 +12,7 @@ const Home: React.FC = () => {
       <div className="relative  h-full p-0   flex flex-col items-center overflow-hidden  w-screen">
         <div className="relative  px-4 lg:px-10 w-full flex-wrap">
           <div className="w-full flex justify-center items-center h-[calc(100vh-100px)] lg:h-[52vh] rounded-3xl">
-            <div className="relative w-full h-full  rounded-3xl bg-center">
-              <Image
-                className="object-cover w-full h-auto rounded-3xl"
-                priority
-                width={600}
-                height={600}
-                src="https://www.nesscoindia.com/Assets/images/banner/banner-image-nessco-2.webp"
-                alt="Home Page"
-              />
-            </div>
+           <ImageSlider/>
           </div>
         </div>
         <div className="absolute h-auto w-[80%] lg:w-auto  left-8 top-1/3 lg:top-[38%] lg:left-28 flex-col text-7xl text-white font-alexBrush">
