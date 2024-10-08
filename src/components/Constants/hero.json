@@ -1,32 +1,32 @@
 [
   {
     "homeSeoData": {
-    "title": "Paper Cup Machine Manufacturer and Supplier - Nessco India",
-    "description": "Trusted Paper Cup Machine Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
-    "keywords": "Nessco India",
-    "openGraph": {
       "title": "Paper Cup Machine Manufacturer and Supplier - Nessco India",
       "description": "Trusted Paper Cup Machine Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
-      "images": [
-        {
-          "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
-          "alt": "Fully Automatic Paper Cup Making Machine"
-        }
-      ]
+      "keywords": "Nessco India",
+      "openGraph": {
+        "title": "Paper Cup Machine Manufacturer and Supplier - Nessco India",
+        "description": "Trusted Paper Cup Machine Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+        "images": [
+          {
+            "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+            "alt": "Fully Automatic Paper Cup Making Machine"
+          }
+        ]
+      },
+      "robots": "index, follow",
+
+      "alternates": {
+        "canonical": "https://www.nesscoindia.com"
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": "@NesscoIndia",
+        "title": "Paper Cup Machine Manufacturer - Nessco India",
+        "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+        "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+      }
     },
-    "robots": "index, follow",
-    
-    "alternates": {
-      "canonical": "https://www.nesscoindia.com"
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@NesscoIndia",
-      "title": "Paper Cup Machine Manufacturer - Nessco India",
-      "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
-      "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
-    }
-  },
     "homeMachineSection": {
       "title": "Our Products",
       "subheading": "We are known for manufacturing and globally exporting various paper packaging machines including Cups, Glass, Straws and Plate Machines."
@@ -68,28 +68,27 @@
       "video": {
         "sources": [
           {
-            "src": "https://assets.nesscoindustries.com/public/video/BgHome.mp4",
-            "type": "video/mp4"
+            "src": "https://res.cloudinary.com/dj4jijw2a/video/upload/v1728375655/xyzcompresesed_frist_webm_kvgka1.webm",
+            "type": "video/webm"
           }
         ],
-
-        "poster": "https://assets.nesscoindustries.com/public/video/home.webp"
+        "poster": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp"
       },
       "images": [
-        "https://assets.nesscoindustries.com/public/video/home.webp",
-        "https://assets.nesscoindustries.com/public/video/home.webp",
-        "https://assets.nesscoindustries.com/public/home.webp",
-        "https://assets.nesscoindustries.com/public/video/home.webp"
+        "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
+        "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
+        "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+        "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
       ],
       "textOverlay": {
         "headline": "Quality Food Packaging",
         "subheadline": "Machinery & Solutions"
       },
-      "buttonText":"Get a quote"
+      "buttonText": "Get a quote"
     }
   },
   {
-    "category":"ProductSection",
+    "category": "ProductSection",
     "data": {
       "products": [
         {
@@ -617,16 +616,16 @@
   {
     "category": "homeaboutsection",
     "data": {
-      "title":"About US",
+      "title": "About US",
       "heading": "Leading the Way in Food Packaging Machine Manufacturing",
       "description": "At Nessco India, we specialize in manufacturing advanced food packaging machines that set industry standards for quality and innovation. Our state-of-the-art technology ensures efficient and sustainable solutions, meeting the diverse needs of our global clientele. With over 40 years of expertise, we are dedicated to pioneering eco-friendly practices in packaging. Trust us to lead the way in transforming packaging solutions for a greener future.",
       "stats": {
         "machinesSold": 30000,
         "readyStockMachines": 3000
       },
-      "leftstats":"Machines Sold",
-      "rightstats":"Ready Stock Machines",
-      "readmore":"Read more",
+      "leftstats": "Machines Sold",
+      "rightstats": "Ready Stock Machines",
+      "readmore": "Read more",
       "cards": [
         {
           "title": "Vision & Mission",
@@ -764,7 +763,7 @@
           "imageInformation": "Paper Plate",
           "information": "More information about this item."
         },
-        
+
         {
           "h1": "Die Cutting Machine",
           "h2": "NS-950",
@@ -884,7 +883,7 @@
         {
           "title": "Industry Expertise",
           "description": "With over 40 years of industry expertise, Nessco India has a rich history of innovation and reliability. Our extensive experience allows us to deliver high-quality, cutting-edge packaging solutions tailored to our clients' needs. Trust our proven track record and deep industry knowledge to provide exceptional products and services.",
-          "src": "https://assets.nesscoindustries.com/public/assets/HomeKnowmore4.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "link": "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
           "color": "#24194c",
           "expertiseExperience": "40+ Years of ",
@@ -894,7 +893,7 @@
         {
           "title": "Indigenous Design Engineering",
           "description": "At Nessco India, our indigenous design engineering team leverages local expertise to create innovative packaging machines. This in-house approach ensures tailored solutions, superior quality, and reliable performance. By developing designs internally, we maintain full control over the manufacturing process, guaranteeing sustainability and excellence in every product.",
-          "src": "https://assets.nesscoindustries.com/public/assets/HomeKnowmore2.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "link": "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
           "color": "#4e3e8a",
           "expertiseExperience": "40+ Years of ",
@@ -904,7 +903,7 @@
         {
           "title": "Quality Control & Assurance",
           "description": "Quality Control & Assurance is a cornerstone of our manufacturing process. Our rigorous quality control measures ensure that every product meets the highest standards of performance and durability. We are committed to delivering excellence, consistently verifying that our machines exceed industry expectations for reliability and efficiency.",
-          "src": "https://assets.nesscoindustries.com/public/assets/HomeKnowmore3.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "link": "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
           "color": "#8c52ff",
           "expertiseExperience": "40+ Years of ",
@@ -914,7 +913,7 @@
         {
           "title": "Advanced Engineering Technologies",
           "description": "We use the highest grade tooling, cylindrical grinders, VMC, and CNC machines to build the art of engineering. These advanced technologies ensure precision and excellence in our manufacturing process, allowing us to deliver top-tier packaging machines with unmatched performance and reliability. Trust our state-of-the-art equipment to produce engineering marvels tailored to your needs.",
-          "src": "https://assets.nesscoindustries.com/public/assets/HomeKnowmore4.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "link": "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
           "color": "#a58fe8",
           "expertiseExperience": "25+ Years of ",
@@ -924,7 +923,7 @@
         {
           "title": "Comprehensive Support Services",
           "description": "We ensure a seamless experience with our comprehensive support services. Our expert team handles the installation of your machinery, ensuring optimal performance from day one. We provide robust warranty coverage to address any issues promptly and ensure the longevity of your equipment. Our extensive spares support guarantees the availability of high-quality parts, to ensure your operations runs smoothly.",
-          "src": "https://assets.nesscoindustries.com/public/assets/HomeKnowmore2.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "link": "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
           "color": "#bca0dd",
           "expertiseExperience": "40+ Years of ",
@@ -935,31 +934,31 @@
     }
   },
   {
-    "category":"newsFeature",
+    "category": "newsFeature",
     "data": {
       "newsData": [
         {
           "title": "Revolutionary Speed Unveiled",
           "description": "Discover the latest advancements in machine speed that are setting new industry benchmarks. Witness how cutting-edge technology is reshaping performance standards.",
-          "image": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "image": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "alt": "Industrial machinery"
         },
         {
           "title": "Excellence Showcased at DRUPA",
           "description": "Experience the pinnacle of innovation as top-tier machines are displayed at DRUPA, showcasing the future of printing technology.",
-          "image": "https://assets.nesscoindustries.com/public/assets/NewsFeatureBanner.jpg",
+          "image": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "alt": "DRUPA exhibition"
         },
         {
           "title": "Excellence Showcased at FOOMA",
           "description": "Explore groundbreaking machines at FOOMA. See how the latest developments are making waves in the food manufacturing sector.",
-          "image": "https://assets.nesscoindustries.com/public/assets/KnowMore2.png",
+          "image": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "alt": "FOOMA exhibition"
         },
         {
           "title": "Flat Bottom Rectangular Machine Launched",
           "description": "Explore groundbreaking machines at FOOMA. See how our latest developments are making waves in the food manufacturing sector.",
-          "image": "https://assets.nesscoindustries.com/public/assets/KnowMore2.png",
+          "image": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "alt": "Flat Bottom Rectangular Machine"
         }
       ],
@@ -972,7 +971,7 @@
     "data": {
       "testinomial": [
         {
-          "src":"https://i.pinimg.com/236x/36/a2/e2/36a2e242bfe3ac039e0618fbaaef7596.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "username": "Alice Johnson",
           "profile": "Software Developer",
           "country": "USA",
@@ -980,7 +979,7 @@
           "flag": "https://flagcdn.com/us.svg"
         },
         {
-          "src": "https://i.pinimg.com/236x/b9/e4/5d/b9e45d2667c272dfb56e22fc0e1fbc64.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "username": "Michael Brown",
           "profile": "Graphic Designer",
           "country": "Canada",
@@ -988,7 +987,7 @@
           "flag": "https://flagcdn.com/ca.svg"
         },
         {
-          "src": "https://i.pinimg.com/236x/05/3f/86/053f86bf19f82e5488b518bcfed17c64.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "username": "Sophia Lee",
           "profile": "Product Manager",
           "country": "UK",
@@ -996,7 +995,7 @@
           "flag": "https://flagcdn.com/gb.svg"
         },
         {
-          "src": "https://i.pinimg.com/236x/b4/0a/81/b40a81ccb4e3b2cac2748622d4929d03.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "username": "David Miller",
           "profile": "Marketing Specialist",
           "country": "Australia",
@@ -1004,101 +1003,29 @@
           "flag": "https://flagcdn.com/at.svg"
         },
         {
-          "src": "https://i.pinimg.com/236x/81/ac/9e/81ac9ef6456e8eccbf651fc368e83e4a.jpg",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "username": "Emily Davis",
           "profile": "UX Researcher",
           "country": "Germany",
           "quote": "Innovate and elevate. Embrace the future with bold ideas.",
           "flag": "https://flagcdn.com/de.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/236x/4d/9c/34/4d9c34104c98b22ea66bf6b8f64ff5b6.jpg",
-          "username": "Oliver Martinez",
-          "profile": "Data Scientist",
-          "country": "Spain",
-          "quote": "Design is intelligence made visible. Creativity transforms.",
-          "flag": "https://flagcdn.com/es.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/236x/bc/61/97/bc61979451b11263cab4f49e21ffc131.jpg",
-          "username": "Charlotte Garcia",
-          "profile": "Business Analyst",
-          "country": "France",
-          "quote": "Innovate and elevate. Embrace the future with bold ideas.",
-          "flag": "https://flagcdn.com/fr.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/564x/5a/2a/89/5a2a89a9c7962e026a8572b701586500.jpg",
-          "username": "William Robinson",
-          "profile": "SEO Specialist",
-          "country": "Italy",
-          "quote": "Design is intelligence made visible. Creativity transforms.",
-          "flag": "https://flagcdn.com/it.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/736x/ff/b3/1e/ffb31e98ffb84717ead291e69a3488ee.jpg",
-          "username": "Amelia Martinez",
-          "profile": "Web Developer",
-          "country": "Mexico",
-          "quote": "Innovate and elevate. Embrace the future with bold ideas.",
-          "flag": "https://flagcdn.com/fr.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/564x/16/af/25/16af2524bc4a0704adcb18eb9bd92b24.jpg",
-          "username": "Liam Johnson",
-          "profile": "Content Writer",
-          "country": "Japan",
-          "quote": "Design is intelligence made visible. Creativity transforms.",
-          "flag": "https://flagcdn.com/me.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/564x/d0/cb/d1/d0cbd1380c72ddf3750c896433b2dea1.jpg",
-          "username": "Evelyn Moore",
-          "profile": "Project Manager",
-          "country": "Brazil",
-          "quote": "Innovate and elevate. Embrace the future with bold ideas.",
-          "flag": "https://flagcdn.com/br.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/736x/b8/82/83/b882836fa749f501aefa935d19e19977.jpg",
-          "username": "Lucas Taylor",
-          "profile": "Social Media Manager",
-          "country": "South Africa",
-          "quote": "Design is intelligence made visible. Creativity transforms.",
-          "flag": "https://flagcdn.com/za.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/564x/c1/4b/88/c14b8848983ccd7fc28850c3e2caf656.jpg",
-          "username": "Mia Clark",
-          "profile": "Quality Assurance",
-          "country": "India",
-          "quote": "Innovate and elevate. Embrace the future with bold ideas.",
-          "flag": "https://flagcdn.com/in.svg"
-        },
-        {
-          "src": "https://i.pinimg.com/564x/90/42/44/90424430eaa5793ac1e893f074b456f2.jpg",
-          "username": "Henry Anderson",
-          "profile": "Digital Marketer",
-          "country": "New Zealand",
-          "quote": "Design is intelligence made visible. Creativity transforms.",
-          "flag": "https://flagcdn.com/fr.svg"
         }
       ],
       "Testinomialvideos": [
         {
-          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
-          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
-          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
-          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
@@ -1106,7 +1033,7 @@
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         },
         {
-          "src": "https://assets.nesscoindustries.com/public/assets/KnowMore1.png",
+          "src": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
           "youtubeLink": "https://www.youtube.com/embed/UxPkK8gW0hs?rel=0"
         }
       ],

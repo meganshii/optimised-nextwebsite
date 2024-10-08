@@ -17,8 +17,6 @@ const Reach: React.FC = () => {
               loading="lazy"
               title="Google Maps"
             ></iframe>
-
-        
           </div>
         </div>
       </section>

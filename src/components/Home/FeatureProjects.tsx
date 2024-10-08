@@ -8,7 +8,6 @@ import React, {
   useCallback,
 } from "react";
 import Image from "next/image";
-
 import data from "../Constants/hero.json"; // Assuming this holds the 'homefeaturedata'
 
 const FeatureProjects: React.FC = () => {

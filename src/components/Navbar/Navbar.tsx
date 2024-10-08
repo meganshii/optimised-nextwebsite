@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import { navbarItems } from "@/components/Constants/Navbar/navbarData";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, MenuItem } from "./nav-menue";
-
-import ContactForm from "../Contact/Contact";
+import { Menu} from "./nav-menue";
+import dynamic from "next/dynamic";
+const MenuItem=dynamic(()=>import("./nav-menue"))
+const ContactForm=dynamic(()=>import("../Contact/Contact"))
 import { usePathname } from "next/navigation";
-import CountryLayout from "./NavLayouts/CountryLayout";
+const CountryLayout=dynamic(()=>import("./NavLayouts/CountryLayout"),{ssr:false})
 export default function NavbarDemo() {
   return (
     <div className="relative lg:h-auto lg:mt-0 flex items-center justify-between lg:justify-center">

@@ -29,33 +29,6 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-  }
 }
 
 @layer base {
@@ -66,23 +39,8 @@
     background: black;
   }
 }
-/* Common styles for the button and its inner elements */
-.btn-common {
-  @apply bg-white text-black font-poppins text-sm sm:text-base md:text-lg  rounded-full cursor-pointer flex items-center;
-}
 
-.btn-icon {
-  @apply border-black rounded-full h-6 sm:h-8 w-6 sm:w-8 ml-1 sm:ml-2;
-}
 
-.btn-icon span {
-  @apply text-xl sm:text-2xl;
-}
-
-.text-txs {
-  font-size: 0.45rem /* 12px */;
-  line-height: 0.5rem /* 16px */;
-}
 
 html {
   /* Ensure scrollable content */
@@ -121,16 +79,7 @@ html::-webkit-scrollbar {
 body {
   background-color:#f2f2f2;
 }
-/* global.css */
-.custom-scale-80 {
-  @apply hover:scale-80 transition-transform duration-200;
-}
-.custom-scale-90 {
-  @apply hover:scale-90 transition-transform duration-200;
-}
-.custom-scale-100 {
-  @apply hover:scale-100 transition-transform duration-200;
-}
+
 
 /* Custom Gradient Mask */
 #testimonials::before {
@@ -153,9 +102,6 @@ body {
   }
 }
 
-.animate-scroll-testinomial {
-  animation: scrollTestinomial var(--animation-duration) linear infinite;
-}
 
 /* Apply a gradient mask to an element */
 /* Add this to your global CSS or inside a relevant CSS module */
@@ -220,17 +166,9 @@ body {
 .stopscrollProduct{
   /* Ensure scrollable content */
   overflow-y:auto;
-  /* Hide scrollbar for Firefox */
-  /* scrollbar-width: none; */
-}
-
-/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
-/* .stopscrollProduct::-webkit-scrollbar {
-  display: none;
-} */
- .customnav{
-  background-color: white !important;
  }
+
+ 
  
 /* hide scrollbar from blogs Page3 component */
 .scrollbar-hide::-webkit-scrollbar {

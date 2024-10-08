@@ -24,7 +24,15 @@ export default function RootLayout({
           rel="preload"
           href="https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
           as="image"
-          />
+        />
+        {/* Preload video */}
+        <link
+          rel="preload"
+          href="https://res.cloudinary.com/dj4jijw2a/video/upload/v1728362941/NesscoIcons/hgjyjg9lydioz5suzjg9.webm" // Replace with your video URL
+          as="video"
+          type="video/mp4" // Adjust type if necessary
+        />
+        
       </head>
       <body className={`${inter.variable} ${poppins.variable}`}>
         <NavbarDemo />

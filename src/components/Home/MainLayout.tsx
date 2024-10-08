@@ -2,15 +2,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Hero from "@/components/Home/Home";
-import NavLinksDemo from "@/components/Home/NavLinks";
-// import ContactIcons from "@/components/Contact/ContactIcon";
-import FeatureNews from "@/components/Home/FeatureNews";
+const NavLinksDemo=dynamic(()=>import("@/components/Home/NavLinks"),{ssr:false})
+const FeatureNews=dynamic(()=>import("@/components/Home/FeatureNews"),{ssr:true})
 import data from "../Constants/hero.json";
 const AnnouncementSection=dynamic(()=>import("@/components/Home/AnnouncementSection"))
-// Dynamically import components for better client-side loading
-const AboutUs = dynamic(() => import("@/components/Home/AboutSection"), {
-  ssr: false,
-});
 const ContactIcons=dynamic(()=>import("@/components/Contact/ContactIcon"))
 const MarqueeSection = dynamic(
   () => import("@/components/Home/MarqueeSection"),
@@ -142,9 +137,7 @@ export default function MainLayout() {
         <div className="h-auto max-w-screen-2xl mx-auto lg:py-8">
           <AnnouncementSection />
         </div>
-        <div id="aboutUs" ref={sectionRefs.aboutUsRef}>
-          <AboutUs />
-        </div>
+        
         <div
           id="clientele"
           className="max-w-screen-2xl mx-auto"

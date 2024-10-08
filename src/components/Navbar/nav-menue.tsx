@@ -28,7 +28,7 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const MenuItem = ({
+ const MenuItem = ({
   setActive,
   active,
   item,
@@ -139,3 +139,4 @@ const Cursor = ({
     />
   );
 };
+export default MenuItem;

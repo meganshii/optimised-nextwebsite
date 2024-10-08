@@ -1,11 +1,14 @@
 import React from "react";
-// import ContactForm from "@/components/Contact-page/Contact";
-// import Branches from "@/components/Contact-page/Branches";
-// import Reach from "@/components/Contact-page/Reach";
 import dynamic from "next/dynamic";
-const ContactForm = dynamic(() => import("@/components/Contact-page/Contact"));
-const Branches = dynamic(() => import("@/components/Contact-page/Branches"));
-const Reach = dynamic(() => import("@/components/Contact-page/Reach"));
+const ContactForm = dynamic(() => import("@/components/Contact-page/Contact"), {
+  ssr: false,
+});
+const Branches = dynamic(() => import("@/components/Contact-page/Branches"), {
+  ssr: false,
+});
+const Reach = dynamic(() => import("@/components/Contact-page/Reach"), {
+  ssr: false,
+});
 export default function contact() {
   return (
     <main>

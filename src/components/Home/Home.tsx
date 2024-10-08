@@ -1,7 +1,6 @@
 import React from "react";
 import data from "../Constants/hero.json";
 import { Button } from "../ui/button";
-// import FeatureProjects from "./FeatureProjects";
 import ImageSlider from "../ui/ImageSlider";
 import dynamic from "next/dynamic";
 const FeatureProjects=dynamic(()=>import("./FeatureProjects"))
@@ -57,7 +56,7 @@ const Home: React.FC = () => {
               </Button>
             </div>
           </div>
-          <div className=" z-50 mt-12 ">
+          <div className=" z-50 mt-10 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
