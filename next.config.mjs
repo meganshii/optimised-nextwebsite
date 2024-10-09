@@ -36,13 +36,13 @@ const nextConfig = {
     ],
   },
   swcMinify: true,
-  experimental: {
-    optimizePackageImports: [
-      '@mantine/core',     // Add Mantine components
-      '@mantine/hooks',    // Add Mantine hooks
-      'lodash',            // Add Lodash for tree shaking
-    ],  // List any additional packages you'd like to optimize
-  }
+  // experimental: {
+  //   optimizePackageImports: [
+  //     '@mantine/core',     // Add Mantine components
+  //     '@mantine/hooks',    // Add Mantine hooks
+  //     'lodash',            // Add Lodash for tree shaking
+  //   ],  // List any additional packages you'd like to optimize
+  // }
 };
 
 // Initialize the bundle analyzer
