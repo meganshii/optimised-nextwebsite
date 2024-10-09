@@ -14,7 +14,6 @@ const poppins = Poppins({
   subsets: ["latin"],
   variable: "--poppins",
   weight: ["400", "500", "600", "700"], // Limit to necessary font weights
-  display: "swap",
 });
 
 export default function RootLayout({
@@ -39,6 +38,20 @@ export default function RootLayout({
           src="https://cdn.pagesense.io/js/nesscoindia/ff3c25fdacd845338fcb5edd343fcde6.js"
           strategy="lazyOnload"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16529601205"
+        ></script>
+        {/* Google tag (gtag.js)  */}
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16529601205');
+  `}
+        </Script>
       </head>
       <body className={`${inter.variable} ${poppins.variable}`}>
         <NavbarDemo />

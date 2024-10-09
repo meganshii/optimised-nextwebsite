@@ -68,12 +68,12 @@
       "video": {
         "sources": [
           {
-            "src": "https://res.cloudinary.com/dj4jijw2a/video/upload/v1728365793/NewHome_fkeh1n.webm",
+            "src": "https://assets.nesscoindustries.com/public/video/NewHome.webm",
             "type": "video/webm"
           }
         ],
 
-        "poster": "https://assets.nesscoindustries.com/public/video/home.webp"
+        "poster":"https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
       },
       "images": [
         "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
