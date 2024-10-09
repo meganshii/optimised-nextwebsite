@@ -68,15 +68,16 @@
       "video": {
         "sources": [
           {
-            "src": "https://res.cloudinary.com/dj4jijw2a/video/upload/v1728375655/xyzcompresesed_frist_webm_kvgka1.webm",
+            "src": "https://res.cloudinary.com/dj4jijw2a/video/upload/v1728365793/NewHome_fkeh1n.webm",
             "type": "video/webm"
           }
         ],
-        "poster": "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp"
+
+        "poster": "https://assets.nesscoindustries.com/public/video/home.webp"
       },
       "images": [
-        "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
-        "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp",
+        "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+        "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
         "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
         "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
       ],

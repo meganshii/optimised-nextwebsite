@@ -15,7 +15,7 @@ const ImageSlider: React.FC = () => {
       <video
         ref={videoRef}
         className="w-full h-full object-cover rounded-2xl"
-        autoPlay={false}
+        autoPlay={true}
         loop
         muted
         controls={false}
