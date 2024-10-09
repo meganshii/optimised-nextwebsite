@@ -19,7 +19,7 @@ const ImageSlider: React.FC = () => {
           console.error("Failed to play the video:", error);
         });
       }
-    }, 2000);
+    }, 10000);
 
     return () => clearTimeout(timer); // Cleanup on component unmount
   }, [videoSources]);
