@@ -80,12 +80,13 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div ref={ref} className="z-10 cursor-pointer px-3 font-poppins">
-      <Link
+      <a
         className="invert-0 text-base font-light"
         href={`/${link}`}
+        
       >
         {item}
-      </Link>
+      </a>
       {active === item && (
         <motion.div className="absolute  top-[calc(100%_-_1.0rem)] left-0 pt-4">
           <motion.div

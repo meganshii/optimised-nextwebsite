@@ -22,7 +22,6 @@ interface ResourceGridProps {
 
 const ResourceGrid: React.FC<ResourceGridProps> = ({}) => {
   const supportData = data.find((item) => item.category === "Resources")?.data;
-  console.log("supportData", supportData);
   const pathname = usePathname() || "";
   const countryCode = pathname.split("/")[1]?.toLowerCase();
   const DataBankItem = supportData?.DataBankItem || [];

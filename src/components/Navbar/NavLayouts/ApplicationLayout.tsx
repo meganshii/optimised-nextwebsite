@@ -40,7 +40,6 @@ export default function ApplicationLayout() {
   const applicationData =
     data.find((item) => item.category === "Application")?.data.applications ||
     [];
-  console.log(applicationData);
   const [activeProduct, setActiveProduct] = useState<Product>(
     applicationData[0]
   );

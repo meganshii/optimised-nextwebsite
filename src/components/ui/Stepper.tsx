@@ -46,10 +46,8 @@ const Stepper: React.FC<{ onStepChange: (index: number) => void }> = ({
       const navTop = navRef.current?.getBoundingClientRect().top || 0;
       if (navTop <= 56) {
         setScrolling(true);
-        // console.log(navTop);
       } else {
         setScrolling(false);
-        // console.log("hello", navTop);
       }
     };
 
