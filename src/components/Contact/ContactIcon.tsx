@@ -48,8 +48,19 @@ export default function ContactIcons() {
 
       {/* Chat Icon */}
       <div className="fixed z-[9999] hidden md:flex right-8 bottom-8">
-        <button className="flex items-center justify-center text-white rounded-full bg-[#4d3d78] bg-opacity-50 backdrop-blur-sm p-4 hover:bg-opacity-75 transition duration-300">
-          <span className="text-lg font-semibold">Chat</span>
+        <button aria-label="chat with us" className="flex items-center justify-center text-white rounded-full bg-[#4d3d78] bg-opacity-50 backdrop-blur-sm p-4 hover:bg-opacity-75 transition duration-300">
+          <span className="text-lg font-semibold">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="47.162"
+              height="47.999"
+            >
+              <g fill="#1a171b">
+                <path d="M31.846 0a15.332 15.332 0 0 0-15.314 15.314c0 .059.006.117.009.176a15.086 15.086 0 0 0-1.227-.063A15.331 15.331 0 0 0 0 30.741v16.531a.727.727 0 0 0 .384.641.711.711 0 0 0 .344.087.731.731 0 0 0 .4-.121L7.3 43.784a15.309 15.309 0 0 0 23.329-13.043c0-.061-.009-.119-.01-.18.4.039.813.066 1.228.066a15.238 15.238 0 0 0 8.017-2.271l6.168 4.1a.734.734 0 0 0 .4.121.714.714 0 0 0 .344-.086.729.729 0 0 0 .384-.641V15.313A15.335 15.335 0 0 0 31.846 0zM15.314 44.6a13.8 13.8 0 0 1-7.624-2.29.73.73 0 0 0-.8 0l-5.436 3.607V30.741A13.859 13.859 0 1 1 15.314 44.6zm30.391-14.11-5.433-3.6a.72.72 0 0 0-.4-.123.727.727 0 0 0-.4.121 13.79 13.79 0 0 1-7.624 2.291 12.078 12.078 0 0 1-1.311-.08A15.334 15.334 0 0 0 18 15.68c-.007-.121-.019-.242-.019-.365a13.86 13.86 0 0 1 27.719 0V30.49z" />
+                <path d="M23.072 30.013h-7.759a.728.728 0 1 0 0 1.456h7.759a.728.728 0 0 0 0-1.456zM7.556 31.468h3.878a.728.728 0 0 0 0-1.456H7.556a.728.728 0 1 0 0 1.456zM23.072 23.226h-3.491a.727.727 0 1 0 0 1.454h3.491a.727.727 0 0 0 0-1.454zM7.556 24.679H15.7a.727.727 0 0 0 0-1.454H7.556a.727.727 0 1 0 0 1.454zM19.192 36.8H7.556a.728.728 0 1 0 0 1.456h11.636a.728.728 0 1 0 0-1.456zM33.543 15.314a.729.729 0 0 0-.728-.727h-6.788a.727.727 0 1 0 0 1.454h6.788a.727.727 0 0 0 .728-.727zM39.6 14.587h-2.9a.727.727 0 1 0 0 1.454h2.9a.727.727 0 0 0 0-1.454zM29.178 8.525a.728.728 0 0 0-.728-.725h-4.362a.728.728 0 1 0 0 1.456h4.362a.729.729 0 0 0 .728-.731zM39.6 7.8h-7.27a.728.728 0 0 0 0 1.456h7.27a.728.728 0 0 0 0-1.456zM39.6 21.376h-7.753a.727.727 0 1 0 0 1.454H39.6a.727.727 0 0 0 0-1.454z" />
+              </g>
+            </svg>
+          </span>
         </button>
       </div>
 
@@ -75,8 +86,22 @@ export default function ContactIcons() {
             </svg>
           </IconLink>
           <div className="relative">
-            <button className="absolute -top-8 left-1/2 -translate-x-1/2 flex items-center justify-center text-white rounded-full bg-[#4d3d78] bg-opacity-50 backdrop-blur-sm p-4 hover:bg-opacity-75 transition duration-300">
-              <span className="text-lg  font-semibold">Chat</span>
+            <button aria-label="chat with us" className="absolute -top-8 left-1/2 -translate-x-1/2 flex items-center justify-center text-white rounded-full bg-[#4d3d78] bg-opacity-50 backdrop-blur-sm p-4 hover:bg-opacity-75 transition duration-300">
+              <span className="text-lg  font-semibold">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  height="48"
+                >
+                  <path
+                    d="M21 6.5C21 8.1 20.1 9.6 18.8 10.5L18 10.9V16l-3-2.5H4C2.9 13.5 2 12.6 2 11.5V8C2 6.3 3.3 5 5 5h12c2 0 4 1.5 4 3.5z"
+                    fill="black"
+                    stroke="black"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </span>
             </button>
           </div>
           <IconLink href="mailto:info@example.com" aria-label="newmessage">
@@ -100,7 +125,7 @@ export default function ContactIcons() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function IconLink({ children, ...props }: React.ComponentPropsWithoutRef<"a">) {
@@ -111,9 +136,9 @@ function IconLink({ children, ...props }: React.ComponentPropsWithoutRef<"a">) {
     >
       {children}
     </a>
-  )
+  );
 }
 
 function SeparationLine() {
-  return <div className="w-8 h-px bg-gray-200 mx-auto" />
+  return <div className="w-8 h-px bg-gray-200 mx-auto" />;
 }

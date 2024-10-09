@@ -118,12 +118,14 @@ const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
       {items.length > 10 && (
         <div className="flex justify-end gap-2 mr-10">
           <button
+            aria-label="scrollLeft"
             className="relative z-20 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
           </button>
           <button
+            aria-label="scrollRight"
             className="relative z-20 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}

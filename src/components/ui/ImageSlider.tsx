@@ -35,8 +35,7 @@ const ImageSlider: React.FC = () => {
         <Image
           src={homeData.images[0]} // Use the first image in the array as the placeholder
           alt="Hero Image"
-          layout="fill" // Fill the container size
-          objectFit="cover" // Maintain image proportions
+          fill
           quality={100} // High quality for large hero images
           className="rounded-2xl"
           priority // Prioritize loading of this image

@@ -76,9 +76,9 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               <path
                 d="M22 15H8M15 8L8 15L15 22"
                 stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 fill="none"
               />
             </svg>
@@ -100,9 +100,9 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               <path
                 d="M8 15H22M15 8L22 15L15 22"
                 stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 fill="none"
               />
             </svg>

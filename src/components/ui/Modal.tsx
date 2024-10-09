@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import { Item } from "../../type"; // Adjust the path according to your file structure
 import Breadcrumb from "./Breadcrumb";
 import dynamic from "next/dynamic";
+import { Item } from "@/type";
 const PositionAwareButton = dynamic(() => import("./PositionAwareButton"));
 interface ModalProps {
   image: StaticImageData;

@@ -124,11 +124,10 @@ const Dots: React.FC<DotsProps> = ({ videoIndex, setVideoIndex }) => {
   return (
     <div className="absolute mt-1 left-1/2 transform -translate-x-1/2 flex gap-1.5">
       {testimonialItems.map((_, idx) => (
-        <button
-          aria-label="Dots"
+        <div
           key={idx}
           onClick={() => setVideoIndex(idx)}
-          className={`relative block w-1.5 h-1.5 bg-gray-400 rounded-full overflow-hidden transition-all duration-300 ${
+          className={`relative block cursor-pointer w-1.5 h-1.5 bg-gray-400 rounded-full overflow-hidden transition-all duration-300 ${
             idx === videoIndex ? "w-10 rounded-lg h-1.5" : ""
           }`}
         >
@@ -137,7 +136,7 @@ const Dots: React.FC<DotsProps> = ({ videoIndex, setVideoIndex }) => {
               idx === videoIndex ? "animate-progress" : ""
             }`}
           ></span>
-        </button>
+        </div>
       ))}
     </div>
   );

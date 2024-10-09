@@ -104,9 +104,9 @@ const FeatureProjects: React.FC = () => {
                 <path
                   d="M22 15H8M15 8L8 15L15 22"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   fill="none"
                 />
               </svg>
@@ -127,9 +127,9 @@ const FeatureProjects: React.FC = () => {
                 <path
                   d="M8 15H22M15 8L22 15L15 22"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   fill="none"
                 />
               </svg>
@@ -191,7 +191,10 @@ const FeatureProjects: React.FC = () => {
                   {/* View Machine Button */}
                   {hoveredCardIndex === idx && (
                     <div className="flex w-full items-center justify-center absolute bottom-[5%]">
-                      <button className="text-[0.6rem] font-medium mr-1">
+                      <button
+                        aria-label="View Machine"
+                        className="text-[0.6rem] font-medium mr-1"
+                      >
                         View Machine
                       </button>
                     </div>

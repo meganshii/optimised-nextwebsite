@@ -27,7 +27,13 @@ const Footer: React.FC = () => {
               : "bg-white"
           } ${styles.footer}`}
         >
-          <div className={`${styles.bgimagefooter} `}></div>
+          <div
+            style={{
+              backgroundImage:
+                "url('https://www.nesscoindia.com/Assets/images/shape/wmap.webp')",
+            }}
+            className={`${styles.bgimagefooter} `}
+          ></div>
           <div className="w-full relative m-auto mt-6 lg:p-0 p-3">
             <div className="flex flex-col-reverse  lg:flex-row  justify-evenly items-start w-[100%] lg:px-5  mb-[-0.10rem] ">
               <div className="flex flex-row-reverse lg:flex-row mt-7 lg:mt-0 ">
@@ -184,9 +190,7 @@ const Footer: React.FC = () => {
                       ))}
                     </div>
 
-                    <div className="flex flex-row space-x-2 mt-5  ">
-                     
-                    </div>
+                    <div className="flex flex-row space-x-2 mt-5  "></div>
                   </div>
                   <div>
                     <h3

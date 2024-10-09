@@ -130,9 +130,9 @@ const Card = ({ card }: { card: Card; index: number; layout?: boolean }) => {
           <Image
             src={card.image}
             alt={card.title}
-            layout="fill"
-            objectFit="contain"
-            className="border-2 bg-[#f2f2f2] rounded-[1.5rem] absolute z-10 inset-0"
+            height={640}
+            width={480}
+            className="border-2 bg-[#f2f2f2] rounded-[1.5rem] absolute  z-10 inset-0"
             quality={75} // Compress image quality for optimization
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Serve appropriate image sizes
           />
