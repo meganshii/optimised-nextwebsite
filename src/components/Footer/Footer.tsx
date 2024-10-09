@@ -217,11 +217,11 @@ const Footer: React.FC = () => {
               {footerData.copyright}
             </p>
             <div className="border h-[2rem] border-gray-400 ml-5"></div>
-            <Link href="/privacy-policy/" passHref>
+            {/* <Link href="/privacy-policy/" passHref>
               <p className="font-poppins text-sm font-light ml-5 invert-0">
                 {footerData.privacyPolicy}
               </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
