@@ -1,25 +1,32 @@
-import Image from "next/image"; // Next.js Image for optimized images
+import { useRef } from "react";
 import data from "../Constants/hero.json";
 
 const ImageSlider: React.FC = () => {
   const homeData = data.find((item) => item.category === "HeroSection")?.data;
+  const videoSources = homeData?.video?.sources || [];
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-  
+  if (!videoSources.length) {
+    return <p>No video available.</p>;
+  }
+
   return (
-    <div className="relative w-full h-full aspect-w-16 aspect-h-9">
-      {/* Optimized Image Placeholder using Next/Image */}
-      {homeData?.images?.length && (
-        <Image
-          src={homeData.images[0]} // Use the first image in the array as the placeholder
-          alt="Hero Image"
-          fill
-          quality={100} // High quality for large hero images
-          className="rounded-2xl"
-          priority // Prioritize loading of this image
-        />
-      )}
-
-   
+    <div className="relative w-full mx-auto h-full">
+      <video
+        ref={videoRef}
+        className="w-full h-full object-cover rounded-2xl"
+        autoPlay={false}
+        loop
+        muted
+        controls={false}
+        playsInline
+        preload="metadata" // Preload only metadata for faster loading
+      >
+        {videoSources.map((source, index) => (
+          <source key={index} src={source.src} type={source.type} />
+        ))}
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
