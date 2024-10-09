@@ -4,12 +4,7 @@ export const footerData = {
   stores: ["Jaipur", "Pune", "Dubai", "Germany", "Tokyo"],
   businessPartners: "Our Business Partners",
   awards: [
-    { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457274/6_kkjwj8.svg", alt: "Award 1" },
-    { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457265/1_x1dllr.svg", alt: "Award 2" },
-    { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457263/3_emwkmt.svg", alt: "Award 3" },
-    { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457263/4_bo8dxu.svg", alt: "Award 4" },
-    { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457263/2_ds7gdi.svg", alt: "Award 5" },
-    { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457262/5_zlugeb.svg", alt: "Award 6" },
+       { src: "https://res.cloudinary.com/dj4jijw2a/image/upload/v1728457262/5_zlugeb.svg", alt: "Award 6" },
   ],
   clients: "Our Clients",
   careers: ["Fulltime", "Freelance"],
