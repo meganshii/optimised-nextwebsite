@@ -13,7 +13,7 @@ interface HomeSeoData {
     description: string;
     images: { url: string; alt: string }[];
   };
-  robots: string; 
+  robots: string;
   alternates: {
     canonical: string;
   };
@@ -53,7 +53,8 @@ export async function generateMetadata(): Promise<Metadata> {
         site: "@DefaultTwitter",
         title: "Default Twitter Title",
         description: "Default Twitter Description",
-        images: [ // Fix: Change 'image' to 'images'
+        images: [
+          // Fix: Change 'image' to 'images'
           {
             url: "/default-image.webp",
             alt: "Default Twitter Image",
@@ -76,7 +77,7 @@ export async function generateMetadata(): Promise<Metadata> {
       })),
     },
     robots: metadata.robots,
-   
+
     alternates: {
       canonical: metadata.alternates.canonical,
     },
@@ -85,7 +86,8 @@ export async function generateMetadata(): Promise<Metadata> {
       site: metadata.twitter.site,
       title: metadata.twitter.title,
       description: metadata.twitter.description,
-      images: [ // Fix: Change 'image' to 'images'
+      images: [
+        // Fix: Change 'image' to 'images'
         {
           url: metadata.twitter.image,
           alt: "Twitter Image",
