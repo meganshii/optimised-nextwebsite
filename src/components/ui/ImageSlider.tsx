@@ -48,7 +48,7 @@ const ImageSlider: React.FC = () => {
       ) : (
         imageSources && (
           <Image
-            src={imageSources[0]} // Use a fallback image for smaller screens
+            src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp" // Use a fallback image for smaller screens
             alt="Hero Image"
             fill
             priority
