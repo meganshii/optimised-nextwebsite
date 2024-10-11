@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect} from "react";
 import box from "../../../public/assets/stepper/box.svg";
 import box1 from "../../../public/assets/stepper/bowl.svg";
 import box2 from "../../../public/assets/stepper/popcorn.svg";
