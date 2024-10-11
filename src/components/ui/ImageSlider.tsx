@@ -1,12 +1,12 @@
 import { useRef, useEffect, useState } from "react";
 import data from "../Constants/hero.json";
+import Image from "next/image";
 
 const ImageSlider: React.FC = () => {
   const homeData = data.find((item) => item.category === "HeroSection")?.data;
   const videoSources = homeData?.video?.sources || [];
   const imageSources = homeData?.images;
   const videoRef = useRef<HTMLVideoElement>(null);
-
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
@@ -47,9 +47,11 @@ const ImageSlider: React.FC = () => {
         </video>
       ) : (
         imageSources && (
-          <img
+          <Image
             src={imageSources[0]} // Use a fallback image for smaller screens
             alt="Hero Image"
+            fill
+            priority
             className="w-full h-full object-cover rounded-2xl"
           />
         )

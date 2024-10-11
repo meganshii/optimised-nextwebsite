@@ -32,6 +32,11 @@ export default function RootLayout({
           type="video/webm"
           crossOrigin="anonymous"
         />
+        <link rel="preload" href="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp" 
+         as="image"
+         type="image/webp"
+         crossOrigin="anonymous"
+        />
 
         {/* Asynchronously load the external PageSense script */}
         <Script

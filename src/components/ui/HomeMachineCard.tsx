@@ -100,13 +100,11 @@ const Card = ({ card }: { card: Card; index: number; layout?: boolean }) => {
                 />
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative h-8 w-8 lg:h-12 lg:w-12 -mr-4 flex items-center justify-center border-2 border-[#483d78] rounded-full bg-white">
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <span className="text-lg lg:text-base font-bold text-[#dc0e2a]">
-                      70
-                    </span>
-                    <span className="text-5 text-[#483d78]">PCM/MIN</span>
-                  </div>
+                <div className="relative h-8 w-8 lg:h-12 lg:w-12 -mr-4  border-2 border-[#483d78] rounded-full bg-white inset-0 flex flex-col items-center justify-center">
+                  <span className="text-lg lg:text-base font-bold text-[#dc0e2a]">
+                    70
+                  </span>
+                  <span className="text-5 text-[#483d78]">PCM/MIN</span>
                 </div>
               </div>
             </div>
@@ -132,11 +130,10 @@ const Card = ({ card }: { card: Card; index: number; layout?: boolean }) => {
             alt={card.title}
             height={640}
             width={480}
-            className="border-2 bg-[#f2f2f2] rounded-[1.5rem] absolute  z-10 inset-0"
+            className="border-2 bg-[#f2f2f2] rounded-[1.5rem] absolute h-full object-contain  z-10 inset-0"
             quality={75} // Compress image quality for optimization
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Serve appropriate image sizes
           />
-
           <div className="absolute -mb-2 font-poppins left-0 right-0 bottom-0 z-40 p-4">
             <h3 className="text-black font-poppins text-sm md:text-base font-regular text-left">
               {card.title}
