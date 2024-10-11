@@ -10,6 +10,10 @@ const nextConfig = {
         hostname: 'i.pinimg.com',
       },
       {
+        protocol:'https',
+        hostname:'https://tinypng.com',
+      }
+      {
         protocol: 'https',
         hostname: 'www.youtube.com',
       },
