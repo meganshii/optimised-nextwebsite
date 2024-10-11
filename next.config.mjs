@@ -12,7 +12,7 @@ const nextConfig = {
       {
         protocol:'https',
         hostname:'https://tinypng.com',
-      }
+      },
       {
         protocol: 'https',
         hostname: 'www.youtube.com',
