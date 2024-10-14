@@ -6,11 +6,12 @@ const ImageSlider: React.FC = () => {
   return (
     <div className="relative w-full mx-auto h-full">
       <Image
-            src="https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+            src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp"
             alt="Hero Image"
             height={200}
             width={200}
-            loading="lazy"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Serve appropriate image sizes
             className="w-full h-full object-cover rounded-2xl"
           />
     </div>
