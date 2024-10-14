@@ -1,11 +1,9 @@
 import React from "react";
-import data from "../Constants/hero.json";
 import { Button } from "../ui/button";
 import ImageSlider from "../ui/ImageSlider";
 import dynamic from "next/dynamic";
 const FeatureProjects=dynamic(()=>import("./FeatureProjects"))
 const Home: React.FC = () => {
-  const homeData = data.find((item) => item.category === "HeroSection")?.data;
   return (
     <>
       <div className="relative  h-full p-0   flex flex-col items-center overflow-hidden  w-screen">
