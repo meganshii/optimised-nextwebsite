@@ -8,7 +8,7 @@ const ImageSlider: React.FC = () => {
         alt="Hero Image"
         height={1200}
         width={800}
-        loading="lazy"
+        priority
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 50vw"
         className="w-full h-full object-cover rounded-2xl"
       />
