@@ -27,26 +27,8 @@ const ImageSlider: React.FC = () => {
 
   return (
     <div className="relative w-full mx-auto h-full">
-      {showVideo && videoSources.length > 0 ? (
-        <video
-          ref={videoRef}
-          className="w-full h-full object-cover rounded-2xl"
-          autoPlay={true}
-          loop
-          muted
-          controls={false}
-          playsInline
-          preload="auto" // Preload the video to start playing smoothly
-        >
-          {videoSources.map((source, index) => (
-            <source key={index} src={source.src} type={source.type} />
-          ))}
-          Your browser does not support the video tag.
-        </video>
-      ) : (
-        imageSources && (
-          <Image
-            src={imageSources[0]} 
+     <Image
+            src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp" // Use a fallback image for smaller screens
             alt="Hero Image"
             height={200}
             width={200}
