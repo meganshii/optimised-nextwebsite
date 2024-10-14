@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import { navbarItems } from "@/components/Constants/Navbar/navbarData";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu} from "./nav-menue";
+import { Menu } from "./nav-menue";
 import dynamic from "next/dynamic";
-const MenuItem=dynamic(()=>import("./nav-menue"))
-const ContactForm=dynamic(()=>import("../Contact/Contact"))
+const MenuItem = dynamic(() => import("./nav-menue"));
+const ContactForm = dynamic(() => import("../Contact/Contact"));
 import { usePathname } from "next/navigation";
-const CountryLayout=dynamic(()=>import("./NavLayouts/CountryLayout"),{ssr:false})
+const CountryLayout = dynamic(() => import("./NavLayouts/CountryLayout"), {
+  ssr: false,
+});
 export default function NavbarDemo() {
   return (
     <div className="relative lg:h-auto lg:mt-0 flex items-center justify-between lg:justify-center">
@@ -100,15 +102,15 @@ function Navbar({ className }: { className?: string }) {
       {/* Mobile Menu */}
       <div className=" lg:hidden  border-b-2 flex w-full ">
         <div className="lg:hidden w-full flex justify-between items-center -ml-2 p-4">
-          {/* <Link href="/" className="h-6 flex items-center">
+          <Link href="/" className="h-6 flex items-center">
             <Image
-              src="https://assets.nesscoindustries.com/public/assets/Logo.png"
+              src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728885791/Logo_l8re7f.webp"
               alt="Logo"
               width={500}
               height={500}
               className="h-[1.4rem] w-full"
             />
-          </Link> */}
+          </Link>
 
           <button
             className="ml-2 text-gray-700 focus:outline-none"
@@ -165,8 +167,7 @@ function Navbar({ className }: { className?: string }) {
                         <button
                           className=" invert-0 p-4"
                           onClick={() => expandItem(item.name)}
-                        >
-                        </button>
+                        ></button>
                       </div>
                       <div className="py-4 flex-grow">
                         <div className="text-sm text-gray-700">
@@ -192,7 +193,6 @@ function Navbar({ className }: { className?: string }) {
                             placeholder="Search Product Name..."
                             required
                           />
-                         
                         </div>
                       </form>
                     </div>
@@ -201,8 +201,7 @@ function Navbar({ className }: { className?: string }) {
                     <div className="relative ">
                       <CountryLayout />
                     </div>
-                    <div className="relative ">
-                    </div>
+                    <div className="relative "></div>
                   </div>
                 </div>
               </div>
