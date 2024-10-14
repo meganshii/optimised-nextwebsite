@@ -151,7 +151,7 @@ const FeatureProjects: React.FC = () => {
                   onMouseLeave={() => setHoveredCardIndex(null)}
                 >
                   {/* Image with Tooltip */}
-                  <div className="absolute top-0 right-2 flex space-x-2">
+                  {/* <div className="absolute top-0 right-2 flex space-x-2">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center relative group">
                       <Image
                         src={item.image}
@@ -166,7 +166,7 @@ const FeatureProjects: React.FC = () => {
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Title
                   <div className="p-2 font-poppins">
@@ -176,7 +176,7 @@ const FeatureProjects: React.FC = () => {
                   </div> */}
 
                   {/* Product Image */}
-                  <div className="flex justify-center items-center">
+                  {/* <div className="flex justify-center items-center">
                     <div className="w-full px-2 hover:px-0 transition-all duration-300 lg:h-[14vh] mt-1 flex justify-center items-center">
                       <Image
                         className="object-cover"
@@ -186,7 +186,7 @@ const FeatureProjects: React.FC = () => {
                         height={400}
                       />
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* View Machine Button */}
                   {hoveredCardIndex === idx && (
