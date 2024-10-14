@@ -51,6 +51,7 @@ function Navbar({ className }: { className?: string }) {
               alt="Logo"
               width={181}
               height={48}
+              priority
               className="h-[1.4rem]  w-20"
             />
           </Link>
@@ -104,8 +105,9 @@ function Navbar({ className }: { className?: string }) {
             <Image
               src="https://assets.nesscoindustries.com/public/assets/Logo.png"
               alt="Logo"
-              width={500}
-              height={500}
+              width={181}
+              height={48}
+              priority
               className="h-[1.4rem] w-full"
             />
           </Link>
