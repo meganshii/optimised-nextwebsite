@@ -7,20 +7,18 @@ const ImageSlider: React.FC = () => {
   const videoSources = homeData?.video?.sources || [];
   const imageSources = homeData?.images;
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    // Check screen size on mount and on resize
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024); // Example breakpoint: 1024px for larger screens
-    };
+    // Initially show the image for 10 seconds
+    const timer = setTimeout(() => {
+      setShowVideo(true); // Switch to video after 10 seconds
+      if (videoRef.current) {
+        videoRef.current.load(); // Load the video
+      }
+    }, 5000); // 10 seconds delay
 
-    handleResize(); // Set initial value
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => clearTimeout(timer); // Clear the timer on cleanup
   }, []);
 
   if (!videoSources.length && !imageSources?.length) {
@@ -29,17 +27,16 @@ const ImageSlider: React.FC = () => {
 
   return (
     <div className="relative w-full mx-auto h-full">
-      {isLargeScreen && videoSources.length > 0 ? (
+      {showVideo && videoSources.length > 0 ? (
         <video
           ref={videoRef}
           className="w-full h-full object-cover rounded-2xl"
-          autoPlay
+          autoPlay={true}
           loop
           muted
           controls={false}
           playsInline
-        
-          poster={imageSources ? imageSources[0] : ''} // Set the poster image here
+          preload="auto" // Preload the video to start playing smoothly
         >
           {videoSources.map((source, index) => (
             <source key={index} src={source.src} type={source.type} />
@@ -49,10 +46,11 @@ const ImageSlider: React.FC = () => {
       ) : (
         imageSources && (
           <Image
-            src={imageSources[0]} // Use a fallback image for smaller screens
+            src={imageSources[0]} 
             alt="Hero Image"
-            fill
-            priority // This ensures the image is prioritized for LCP optimization
+            height={200}
+            width={200}
+            priority
             className="w-full h-full object-cover rounded-2xl"
           />
         )
