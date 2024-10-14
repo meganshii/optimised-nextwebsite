@@ -51,7 +51,6 @@ function Navbar({ className }: { className?: string }) {
               alt="Logo"
               width={181}
               height={48}
-              priority
               className="h-[1.4rem]  w-20"
             />
           </Link>
@@ -101,16 +100,15 @@ function Navbar({ className }: { className?: string }) {
       {/* Mobile Menu */}
       <div className=" lg:hidden  border-b-2 flex w-full ">
         <div className="lg:hidden w-full flex justify-between items-center -ml-2 p-4">
-          <Link href="/" className="h-6 flex items-center">
+          {/* <Link href="/" className="h-6 flex items-center">
             <Image
               src="https://assets.nesscoindustries.com/public/assets/Logo.png"
               alt="Logo"
-              width={181}
-              height={48}
-              priority
+              width={500}
+              height={500}
               className="h-[1.4rem] w-full"
             />
-          </Link>
+          </Link> */}
 
           <button
             className="ml-2 text-gray-700 focus:outline-none"
