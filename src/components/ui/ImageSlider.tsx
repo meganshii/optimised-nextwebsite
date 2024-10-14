@@ -4,7 +4,7 @@ const ImageSlider: React.FC = () => {
   return (
     <div className="relative w-full mx-auto h-full">
       <Image
-        src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp"
+        src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728896967/webphome_1_optimized_10_kcofi8.webp"
         alt="Hero Image"
         height={200}
         width={200}
