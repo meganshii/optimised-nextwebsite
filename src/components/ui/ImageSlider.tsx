@@ -8,10 +8,10 @@ const ImageSlider: React.FC = () => {
       <Image
             src="https://res.cloudinary.com/dj4jijw2a/image/upload/v1728375387/webphome_r4zgw2.webp"
             alt="Hero Image"
-            height={200}
-            width={200}
+            height={1200}
+            width={800}
             priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Serve appropriate image sizes
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 50vw"
             className="w-full h-full object-cover rounded-2xl"
           />
     </div>
