@@ -16,7 +16,7 @@ const ImageSlider: React.FC = () => {
       if (videoRef.current) {
         videoRef.current.load(); // Load the video
       }
-    }, 10000); // 10 seconds delay
+    }, 10000); // 5 seconds delay
 
     return () => clearTimeout(timer); // Clear the timer on cleanup
   }, []);
