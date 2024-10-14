@@ -168,12 +168,12 @@ const FeatureProjects: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Title */}
+                  {/* Title
                   <div className="p-2 font-poppins">
                     <h3 className="lg:text-xs font-semibold w-[65%]">
                       {item.h1}
                     </h3>
-                  </div>
+                  </div> */}
 
                   {/* Product Image */}
                   <div className="flex justify-center items-center">
