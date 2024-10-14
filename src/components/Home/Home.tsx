@@ -15,12 +15,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="absolute h-auto w-[80%] lg:w-auto  left-8 top-1/3 lg:top-[38%] lg:left-28 flex-col text-7xl text-white font-alexBrush">
-          <h1 className="text-3xl text-center lg:text-start mx-2 md:text-2xl lg:text-5xl font-poppins font-light">
-            {homeData?.textOverlay?.headline}
-            <div className="text-3xl pt-2 lg:text-6xl text-[#f2f2f2] font-poppins font-semibold ">
-              {homeData?.textOverlay?.subheadline}
-            </div>
-          </h1>
+          
         </div>
         <div className="absolute flex flex-col w-1/2  lg:w-[20rem] lg:h-[5rem] lg:rounded-tl-[2rem] rounded-tl-[1.5rem] right-0 bg-[#f5f5f5] lg:bottom-0 bottom-0 text-3xl font-poppins text-white text-center">
           <div className="-mt-4 lg:-mt-6 flex mr-2 lg:mr-8 justify-end">
