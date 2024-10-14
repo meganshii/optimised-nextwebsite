@@ -32,16 +32,7 @@ const Home: React.FC = () => {
             </svg>
           </div>
           <div className="w-full mt-4 ml-8 hidden lg:flex  justify-start">
-            {/* <div className="absolute bottom-4 right-[5.5rem]">
-              <Button className="rounded-full flex items-center bg-primary text-primary-foreground lg:hover:bg-white lg:hover:text-black border border-black px-1 py-2 text-base font-regular group">
-                <span className="flex-grow ml-2 text-center">View All</span>
-                <span className="ml-2 bg-white rounded-full p-1 transition-colors duration-200 lg:group-hover:bg-black">
-                </span>
-              </Button>
-            </div> */}
-          </div>
-          <div className=" lg:hidden mt-2 -ml-2 items-center flex justify-center">
-            <div className="absolute bottom-4 right-4">
+            <div className="absolute bottom-4 right-[5.5rem]">
               <Button className="rounded-full flex items-center bg-primary text-primary-foreground lg:hover:bg-white lg:hover:text-black border border-black px-1 py-2 text-base font-regular group">
                 <span className="flex-grow ml-2 text-center">View All</span>
                 <span className="ml-2 bg-white rounded-full p-1 transition-colors duration-200 lg:group-hover:bg-black">
@@ -49,6 +40,15 @@ const Home: React.FC = () => {
               </Button>
             </div>
           </div>
+          {/* <div className=" lg:hidden mt-2 -ml-2 items-center flex justify-center">
+            <div className="absolute bottom-4 right-4">
+              <Button className="rounded-full flex items-center bg-primary text-primary-foreground lg:hover:bg-white lg:hover:text-black border border-black px-1 py-2 text-base font-regular group">
+                <span className="flex-grow ml-2 text-center">View All</span>
+                <span className="ml-2 bg-white rounded-full p-1 transition-colors duration-200 lg:group-hover:bg-black">
+                </span>
+              </Button>
+            </div>
+          </div> */}
           <div className=" z-50 mt-10 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
