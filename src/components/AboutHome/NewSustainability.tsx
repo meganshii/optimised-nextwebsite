@@ -2,7 +2,6 @@
 import * as React from "react";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 // import { IoArrowRedoSharp } from "react-icons/io5";
 
 import {
@@ -10,16 +9,23 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/about/carousel";
-// import {
-//   IoIosArrowBack,
-//   IoIosArrowDropleftCircle,
-//   IoIosArrowDroprightCircle,
-//   IoIosArrowForward,
-// } from "react-icons/io";
+
 import {
   slides,
   Sustainabilityheading,
 } from "../Constants/About/AboutUsPage.json";
+import dynamic from "next/dynamic";
+
+const Icon1 =dynamic(()=>import("../Icons/about/Icon1"),{ssr:false});
+const Icon2 =dynamic(()=>import("../Icons/about/Icon2"),{ssr:false});
+
+const Icon3 =dynamic(()=>import("../Icons/about/Icon3"),{ssr:false});
+
+const Icon4 =dynamic(()=>import("../Icons/about/Icon4"),{ssr:false});
+const Icon5 =dynamic(()=>import("../Icons/about/Icon5"),{ssr:false});
+
+const Icons=[Icon1,Icon2,Icon3,Icon4,Icon5];
+
 
 const NewSustainability: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,8 +58,10 @@ const NewSustainability: React.FC = () => {
         <div className="lg:w-[60%] lg:h-full h-[45%]  w-full ">
           <Carousel className="lg:w-full lg:max-w-screen-sm relative lg:top-0 top-[20rem] md:top-[15rem]">
             <CarouselContent>
-              {slides.map((slide, index) => (
-                <CarouselItem
+              {slides.map((slide, index) => {
+                const Svglist=Icons[index]
+                return(
+                  <CarouselItem
                   key={slide.id}
                   className={currentSlide === index ? "block" : "hidden"}
                 >
@@ -76,13 +84,7 @@ const NewSustainability: React.FC = () => {
 
                           <div className="flex items-center justify-center lg:space-x-12  relative lg:top-0 top-14 md:top-20 w-full h-[10rem] md:h-[15rem]">
                             <div className="flex-shrink-0 ">
-                              <Image
-                                height={100}
-                                width={100}
-                                src={slide.img}
-                                alt={`Slide ${index + 1} Icon`}
-                                className="lg:w-32 lg:h-32 w-24 h-24 object-cover lg:ml-2"
-                              />
+                              <Svglist/>
                             </div>
                             <p className="lg:text-sm lg:font-regular md:text-sm md:font-regular lg:w-[21rem] w-[21rem] text-xs font-poppins relative text-left px-5 lg:px-0 ">
                               {slide.description}
@@ -93,7 +95,9 @@ const NewSustainability: React.FC = () => {
                     </Card>
                   </div>
                 </CarouselItem>
-              ))}
+                )
+               
+})}
             </CarouselContent>
 
             {/* Arrow buttons with onClick handlers */}
@@ -149,8 +153,10 @@ const NewSustainability: React.FC = () => {
                 {slides[currentSlide]?.title}
               </p>
 
-              {slides.map((slide, index) => (
-                <div
+              {slides.map((slide, index) => {
+                const Sideicon=Icons[index]
+                return(
+                  <div
                   key={slide.id}
                   className={`bg-white relative w-20 h-20 rounded-full ${
                     index === 0
@@ -165,7 +171,7 @@ const NewSustainability: React.FC = () => {
                   }`}
                   onMouseEnter={() => handleHover(index)}
                 >
-                  <Image
+                  {/* <Image
                     src={slide.img}
                     alt={`icon ${index}`}
                     width={70}
@@ -175,9 +181,20 @@ const NewSustainability: React.FC = () => {
                         ? "opacity-100 scale-110"
                         : "opacity-50 hover:opacity-100 hover:scale-90"
                     }`}
-                  />
+                  /> */}
+                  <div >
+                                    <Sideicon className={`transition-transform duration-300 h-[5rem] w-[5rem] ${
+                      currentSlide === index
+                        ? "opacity-100 scale-110"
+                        : "opacity-50 hover:opacity-100 hover:scale-90"
+                    }`}/>
+                                    </div>
+
                 </div>
-              ))}
+                )
+              }
+               
+              )}
             </div>
           </div>
 

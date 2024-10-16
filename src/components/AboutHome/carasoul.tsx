@@ -90,7 +90,7 @@ const Page4 = () => {
                   className="mx-[0.6vw]  lg:w-[20rem] w-full lg:h-[20rem] h-[20rem] bg-[#f2f2f2] flex flex-col items-center justify-center rounded-[1rem] overflow-hidden  hover:shadow-2xl cursor-pointer "
                 >
                   <Image
-                    className="w-full h-full object-cover"
+                    className="w-[20rem] h-[20rem] object-cover"
                     width={200}
                     height={200}
                     src={item.img}

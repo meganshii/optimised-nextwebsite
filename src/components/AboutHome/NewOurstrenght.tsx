@@ -8,9 +8,19 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 // import { IoAddCircle } from "react-icons/io5";
 // import { RxCross2 } from "react-icons/rx";
 import { cards, Heading } from "../Constants/About/AboutUsPage.json";
+import dynamic from "next/dynamic";
 // import { IoIosCloseCircle } from "react-icons/io";
 
 
+const Ideaicon =dynamic(()=> import("../Icons/about/Ideaicon"),{ssr:false});
+const Quality =dynamic(()=> import("../Icons/about/Quality"),{ssr:false});
+
+const Customer =dynamic(()=> import("../Icons/about/Customer"),{ssr:false});
+
+const Sustainabilityicon =dynamic(()=> import("../Icons/about/Sustainabilityicon"),{ssr:false});
+
+
+const Svglist=[Ideaicon,Quality,Customer,Sustainabilityicon]
 
 
 
@@ -101,7 +111,24 @@ export function ExpandableCardDemo() {
               className="absolute right-0"
               onClick={handleClose}
             >
-              {/* <IoIosCloseCircle className="text-white text-3xl"/> */}
+               <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30" // Adjust the width as needed
+      height="30" // Adjust the height as needed
+      viewBox="0 0 24 24"
+   
+    >
+      {/* Circular background */}
+      <circle cx="12" cy="12" r="10" fill="#3a2a79" />
+      {/* Cross sign */}
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
             </motion.button>
 
             <motion.div
@@ -109,7 +136,7 @@ export function ExpandableCardDemo() {
               ref={ref}
               className="w-[20rem] lg:w-[20rem]  lg:h-[23rem] md:h-[40rem] lg:mt-8 mt-10 md:w-[35rem]  flex flex-col bg-[#f7f7f7] dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-xl"
             >
-              <div className="relative w-full h-52 lg:h-[20rem] md:h-[17rem] sm:rounded-tr-lg sm:rounded-tl-lg overflow-hidden">
+              <div className="relative w-full h-52 lg:h-[20rem] md:h-[17rem] sm:rounded-tr-lg sm:rounded-tl-lg overflow-hidden ">
                 {/* Background video */}
                 <Image
                   src={active.video}
@@ -161,8 +188,10 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
       <ul className="  lg:space-y-3 grid grid-cols-2 gap-2 lg:gap-0 lg:flex lg:flex-col lg:p-10 p-7 ">
-        {cards.map((card, index) => (
-          <motion.div
+        {cards.map((card, index) => {
+          const Icons=Svglist[index]
+          return(
+            <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
@@ -192,6 +221,26 @@ export function ExpandableCardDemo() {
                       {card.description}
                     </span>
                   </span>
+                  <span className="absolute lg:right-0 block lg:hidden text-[#3a2a79] md:right-5 top-2 right-2 ">
+                  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30" // Adjust the width as needed
+      height="30" // Adjust the height as needed
+      viewBox="0 0 24 24"
+      
+    >
+      {/* Circular background */}
+      <circle cx="12" cy="12" r="10" fill="#3a2a79" />
+      {/* Plus sign */}
+      <path
+        d="M12 5v14m-7-7h14"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+                  </span>
                   {/* <IoAddCircle
                     className="absolute lg:right-0 block lg:hidden text-[#3a2a79] md:right-5 top-2 right-2 "
                     size={30}
@@ -207,17 +256,12 @@ export function ExpandableCardDemo() {
                 key={index}
                 className=" lg:p-6 md:p-16 h-[10rem] w-[10rem] lg:w-[9rem] lg:h-[8rem] md:h-[15rem] md:w-[15rem] flex items-center justify-center  lg:bg-[#000088] lg:rounded-tr-2xl lg:rounded-br-2xl transition-colors duration-300 p-7 group "
               >
-                <Image
-                  src={card.src}
-                  alt="svg"
-                  width={100}
-                  height={100}
-                  className="object-cover w-full h-full transition-transform duration-300  "
-                />
+                <Icons/>
               </div>
             </div>
           </motion.div>
-        ))}
+          )
+})}
       </ul>
       <div className="flex justify-center bg-slate-50">
         <button className=" absolute bottom-3 w-[8rem]  text-base hover:font-medium font-normal font-poppins h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">

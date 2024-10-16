@@ -5,7 +5,11 @@ import { Page1Data } from "@/components/Constants/About/AboutUsPage.json";
 import { gsap } from "gsap";
 // import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { homepage } from "../svg";
+import dynamic from "next/dynamic";
+
+const Homeicon =dynamic(()=>import("../Icons/about/Homeicon"),{ssr:false});
+
+const Icon=[Homeicon,Homeicon,Homeicon,Homeicon,Homeicon];
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -73,7 +77,9 @@ const Home:React.FC = () => {
             </div>
           </button>
           <div className="absolute bottom-10 flex justify-center w-full lg:space-x-0 -space-x-5 ">
-         
+          {Icon.map((Icon, index) => (
+              <Icon key={index} className="w-10 h-10" /> // Pass any className here
+            ))}
 
           
           </div>

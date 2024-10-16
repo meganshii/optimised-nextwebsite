@@ -79,28 +79,32 @@
       "description": "We leverage cutting-edge technology to design and manufacture advanced paper cup machines, ensuring high efficiency and precision in production.",
       "title": "Innovative Technology",
       "src": "/assets/about/ourcompany/16.svg",
-      "video": "/assets/lowgif.gif"
+      "video": "/assets/lowgif.gif",
+      "iconIndex": 0
     
     },
     {
       "description": "Our stringent quality control processes guarantee that every machine we produce meets the highest industry standards, delivering reliable and consistent performance.",
       "title": "Quality Assurance",
       "src": "/assets/about/ourcompany/17.svg",
-      "video": "/assets/giftwo.gif"
+      "video": "/assets/giftwo.gif",
+      "iconIndex": 1
       
     },
     {
       "description": "We prioritize our customers' needs by offering personalized solutions and exceptional after-sales support, fostering long-term partnerships.",
       "title": "Customer-Centric Approach",
       "src": "/assets/about/ourcompany/18.svg",
-      "video": "/assets/gifthree.gif"
+      "video": "/assets/gifthree.gif",
+      "iconIndex": 2
 
     },
     {
       "description": "Dedicated to environmental responsibility, we focus on producing eco-friendly machines that help businesses reduce their carbon footprint and promote sustainable practices.",
       "title": "Sustainability Commitment",
       "src": "/assets/about/ourcompany/19.svg",
-      "video": "/assets/giffour.gif"
+      "video": "/assets/giffour.gif",
+      "iconIndex": 3
      
     }
   ],

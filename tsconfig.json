@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/assets/index.js", "src/components/Home/data.js", "src/components/Navbar/testin-nav.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/assets/index.js", "src/components/Home/data.js", "src/components/Navbar/testin-nav.tsx", "src/components/svg/Missionicon1.tsx"],
   "exclude": ["node_modules"]
 }

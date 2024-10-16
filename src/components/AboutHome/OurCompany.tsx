@@ -6,9 +6,17 @@ import Page4 from "./carasoul";
 import { companyContent } from "../Constants/About/AboutUsPage.json"; // Adjust path as needed
 // import MobileCarousel from "./Mobilecarasouel";
 import dynamic from "next/dynamic";
-const MobileCarousel=dynamic(()=>import("./Mobilecarasouel"))
+
+const MobileCarousel = dynamic(() => import("./Mobilecarasouel"));
+
+const Ourcompanybgimg =dynamic (()=>import("../Icons/about/Ourcompanybgimg"),{ssr:false})
+
+
+
+
 const OurCompany: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
+
 
   useEffect(() => {
     // Detect screen size for mobile view
@@ -24,16 +32,8 @@ const OurCompany: FC = () => {
     <div className="relative lg:h-[39rem] h-[45rem] md:h-[50rem] bg-white text-white lg:flex lg:flex-col items-center lg:pt-10 pt-5">
       {/* Background image */}
       <div className="absolute inset-0">
-        <Image
-          src="/assets/about/ourcompany/12.svg"
-          alt="Background Image"
-        width={100}
-        height={100}
-          
-          
-          
-          className="h-full w-full opacity-40"
-        />
+       <Ourcompanybgimg  />
+
       </div>
 
       <div className="relative inset-0 ml-[85rem] lg:-mt-[60vh] ">
@@ -42,7 +42,6 @@ const OurCompany: FC = () => {
           alt="Background Image"
           width={100}
           height={100}
-          
           className="h-[10vh] w-[10vw] "
         />
       </div>
@@ -66,12 +65,9 @@ const OurCompany: FC = () => {
           <Page4 /> // Existing carousel for desktop view
         )}
 
-<div className="lg:p-14  p-8 flex-1 font-poppins lg:font-regular lg:text-sm text-xs text-center text-black lg:w-[55%] w-full lg:h-full h-[50%] md:h-[36%] absolute lg:right-0 bottom-0  lg:px-8 lg:flex lg:flex-col justify-center items-center overflow-hidden">
-  <p className=" lg:mt-0 ">
-    {companyContent.description}
-  </p>
-</div>
-
+        <div className="lg:p-14  p-8 flex-1 font-poppins lg:font-regular lg:text-sm text-xs text-center text-black lg:w-[55%] w-full lg:h-full h-[50%] md:h-[36%] absolute lg:right-0 bottom-0  lg:px-8 lg:flex lg:flex-col justify-center items-center overflow-hidden">
+          <p className=" lg:mt-0 ">{companyContent.description}</p>
+        </div>
       </div>
       <div className="flex justify-center bg-slate-50">
         <button className=" absolute bottom-3  text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
