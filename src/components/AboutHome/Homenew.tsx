@@ -44,6 +44,7 @@ const Home:React.FC = () => {
             loop
             muted
             playsInline
+            
             preload="metadata"
             poster ={Page1Data.video}
           >

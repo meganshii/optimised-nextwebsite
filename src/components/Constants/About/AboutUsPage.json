@@ -1,6 +1,6 @@
 {
   "Page1Data": {
-    "video": "/assets/about/Aboutmain.mp4",
+    "video": "https://res.cloudinary.com/dlti4o10e/video/upload/v1729067711/egrfsttlgslt2tsgloqo.mp4",
     "title": "About Us",
     "getaQuote": "Get a Quote",
     "mainImg": "/assets/about/centreimg.svg",
