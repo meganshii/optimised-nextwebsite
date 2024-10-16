@@ -160,7 +160,7 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({}) => {
         // desktop view
         <div className="flex flex-col lg:flex-row items-center lg:items-start mt-12 relative lg:space-x-8">
           {/* Left: Heading */}
-          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-semibold italic text-gray-400 lg:ml-0 lg:mr-auto lg:w-1/3 mb-6 lg:mb-0 relative top-32 pl-10">
+          <h2 className="text-4xl sm:text-6xl lg:text-5xl font-semibold italic text-gray-600 lg:ml-0 lg:mr-auto lg:w-1/3 mb-6 lg:mb-0 relative top-32 pl-10">
             {selectedMachine.title}
           </h2>
 

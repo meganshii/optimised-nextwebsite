@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card,CardContent } from "../ui/card"
 
 
 import {
@@ -214,7 +214,7 @@ const NewSustainability: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="bottom-3 absolute text-center font-poppins border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white rounded-md z-10 w-[8rem] h-[2rem]">
+        <button aria-label="read-more" className="bottom-3 absolute text-center font-poppins border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white rounded-md z-10 w-[8rem] h-[2rem]">
           Read More
         </button>
       </div>

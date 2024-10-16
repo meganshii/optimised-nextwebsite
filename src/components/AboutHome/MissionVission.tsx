@@ -2,7 +2,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import styles from "./featureproject.module.css";
+
 import {
   Carousel,
   CarouselApi,
@@ -25,6 +25,7 @@ const Eyeicon =dynamic(()=>import("../Icons/about/Eyeicon"),{ssr:false});
 
 
 
+
 const pillar = [Pillar, Pillar, Pillar, Pillar];
 const sideicon =[Line,Eyeicon,Eyeicon];
 
@@ -39,11 +40,7 @@ export default function Missionvission() {
     "/assets/about/mission/3.svg", // Image for the third slide
   ];
 
-  const imageClasses = [
-    styles["image-slide-0"], // Class for the first slide
-    styles["image-slide-1"], // Class for the second slide
-    styles["image-slide-2"], // Class for the third slide
-  ];
+
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % images.length);
@@ -161,7 +158,7 @@ export default function Missionvission() {
 
           <div className=" overflow-hidden lg:visible invisible w-[30%] absolute right-0 top-0 p-5">
           {sideicon[currentSlide] && (
-  <div className={`${imageClasses[currentSlide]} h-full w-full transition-transform duration-1000 ease-in-out opacity-100 transform`}>
+  <div className={` h-full w-full transition-transform duration-1000 ease-in-out opacity-100 transform`}>
     {React.createElement(sideicon[currentSlide])}
   </div>
 )}
@@ -170,7 +167,7 @@ export default function Missionvission() {
         </div>
       </div>
 
-      <div className="flex justify-center bg-slate-50 ">
+      <div aria-label="read-more" className="flex justify-center bg-slate-50 ">
         <button className=" absolute bottom-3  w-[8rem] text-base hover:font-medium font-normal font-poppins h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
           Read More
         </button>

@@ -63,7 +63,7 @@ const Awards:React.FC=()=> {
                  className=""
                  />
                 </div>
-                <h3 className="font-medium text-base font-poppins mb-2">{award.title}</h3>
+                <h2 className="font-medium text-base font-poppins mb-2">{award.title}</h2>
                 <p className="text-sm font-poppins font-regular text-gray-500 mb-4 text-wrap h-10 p-2">{award.description}</p>
                 <div className="flex bg-indigo-50 rounded-full w-[6rem] border justify-center p-1 hover:bg-indigo-100 mb-4 lg:mb-10">
                 {/* <FiAward  className=" text-indigo-600"/> */}

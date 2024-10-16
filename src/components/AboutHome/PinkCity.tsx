@@ -112,7 +112,7 @@ const PinkCity = () => {
           ))}
         </div>
         <div className="bg-slate-50 absolute bottom-3 rounded-md ">
-          <button className="text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
+          <button aria-label="read-more" className="text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
             Read More
           </button>
         </div>

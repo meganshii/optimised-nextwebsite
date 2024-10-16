@@ -1,6 +1,33 @@
 {
+  "aboutSeoData": {
+    "title": "About Manufacturer and Supplier - Nessco India",
+    "description": "Trusted About Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+    "keywords": "Nessco India",
+    "openGraph": {
+      "title": "About Manufacturer and Supplier - Nessco India",
+      "description": "Trusted About Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+      "images": [
+        {
+          "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+          "alt": "Fully Automatic Paper Cup Making Machine"
+        }
+      ]
+    },
+    "robots": "index, follow",
+
+    "alternates": {
+      "canonical": "https://www.nesscoindia.com"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@NesscoIndia",
+      "title": "About Manufacturer - Nessco India",
+      "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+      "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+    }
+  },
   "Page1Data": {
-    "video": "https://res.cloudinary.com/dlti4o10e/video/upload/v1729067711/egrfsttlgslt2tsgloqo.mp4",
+    "video": "/assets/about/Aboutmain.mp4",
     "title": "About Us",
     "getaQuote": "Get a Quote",
     "mainImg": "/assets/about/centreimg.svg",
@@ -79,33 +106,25 @@
       "description": "We leverage cutting-edge technology to design and manufacture advanced paper cup machines, ensuring high efficiency and precision in production.",
       "title": "Innovative Technology",
       "src": "/assets/about/ourcompany/16.svg",
-      "video": "/assets/lowgif.gif",
-      "iconIndex": 0
-    
+      "video": "/assets/lowgif.gif"
     },
     {
       "description": "Our stringent quality control processes guarantee that every machine we produce meets the highest industry standards, delivering reliable and consistent performance.",
       "title": "Quality Assurance",
       "src": "/assets/about/ourcompany/17.svg",
-      "video": "/assets/giftwo.gif",
-      "iconIndex": 1
-      
+      "video": "/assets/giftwo.gif"
     },
     {
       "description": "We prioritize our customers' needs by offering personalized solutions and exceptional after-sales support, fostering long-term partnerships.",
       "title": "Customer-Centric Approach",
       "src": "/assets/about/ourcompany/18.svg",
-      "video": "/assets/gifthree.gif",
-      "iconIndex": 2
-
+      "video": "/assets/gifthree.gif"
     },
     {
       "description": "Dedicated to environmental responsibility, we focus on producing eco-friendly machines that help businesses reduce their carbon footprint and promote sustainable practices.",
       "title": "Sustainability Commitment",
       "src": "/assets/about/ourcompany/19.svg",
-      "video": "/assets/giffour.gif",
-      "iconIndex": 3
-     
+      "video": "/assets/giffour.gif"
     }
   ],
   "galleryfour": {
@@ -124,7 +143,7 @@
         "paragraph": "In the Pink City of Jaipur, elephants hold a special place in its cultural and historical heritage. These majestic creatures are an integral part of the city's royal traditions, often seen adorned in vibrant colors and elaborate decorations during festivals and ceremonies."
       },
       {
-        "src": "/assets/pinkcity/palace2.webp", 
+        "src": "/assets/pinkcity/palace2.webp",
         "paragraph": "In the Pink City of Jaipur, elephants hold a special place in its cultural and historical heritage. These majestic creatures are an integral part of the city's royal traditions, often seen adorned in vibrant colors and elaborate decorations during festivals and ceremonies."
       }
     ]
@@ -213,7 +232,7 @@
       "mobileimg": "/assets/about/sustain/machine.svg"
     }
   ],
-  
+
   "grid": [
     {
       "id": 11,

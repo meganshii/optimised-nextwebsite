@@ -35,6 +35,7 @@ const Page4 = () => {
       <div className="lg:w-[45%] w-[100%] flex items-center  lg:-ml-[1vh] relative justify-start ">
         <div className="bg-gray-200 bg-opacity-45 py-[2.5vh] px-[1vw] rounded-[1rem] overflow-hidden">
           <button
+          aria-label="left-arrow"
             className="p-[0.4rem] absolute -bottom-12 right-10 group"
             onClick={scrollLeft}
           >
@@ -58,6 +59,7 @@ const Page4 = () => {
           </button>
 
           <button
+          aria-label="right-arrow"
             className=" p-[0.4rem]  absolute -bottom-12 right-0 group"
             onClick={scrollRight}
           >

@@ -49,6 +49,8 @@ const Home:React.FC = () => {
             poster ={Page1Data.video}
           >
             <source src={Page1Data.video} type="video/mp4" />
+       
+
           </video>
           <div className="absolute top-0 h-full w-full bg-black opacity-50"></div>
           <div className="absolute lg:top-28 top-12 space-y-4 flex flex-col  items-center w-full">

@@ -70,7 +70,7 @@ const OurCompany: FC = () => {
         </div>
       </div>
       <div className="flex justify-center bg-slate-50">
-        <button className=" absolute bottom-3  text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
+        <button aria-label="read-more" className=" absolute bottom-3  text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
           Read More
         </button>
       </div>
