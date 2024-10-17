@@ -49,7 +49,6 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
   };
 
   const carouselRef = useRef<HTMLDivElement | null>(null);
-  const borderRef = useRef<HTMLDivElement | null>(null);
   const gradientRef = useRef<HTMLDivElement | null>(null);
 
   const horizontalLineRef = useRef<HTMLDivElement | null>(null);
