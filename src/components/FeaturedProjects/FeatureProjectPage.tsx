@@ -151,7 +151,7 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
         className={`relative flex flex-col w-full bg-white overflow-hidden `}
       >
         <h1
-          className={`lg:text-5xl text-2xl bg-gradient-to-r from-[#483d73] from-2% via-red-700 via-20% to-red-700   text-transparent bg-clip-text h-[7rem] font-semibold font-poppinsmt-16 lg:ml-[2rem] ml-4`}
+          className={`lg:text-5xl mt-14 text-2xl bg-gradient-to-r from-[#483d73] from-2% via-red-700 via-20% to-red-700   text-transparent bg-clip-text h-[7rem] font-semibold font-poppinsmt-16 lg:ml-[2rem] ml-4`}
         >
           <span className="block"> {Featureheading.featuredpage} </span>
           <span> {Featureheading.featuredpagehighlight} </span>
@@ -210,7 +210,7 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
           </div>
         ) : (
           // Desktop view
-          <div className="flex flex-col lg:flex-row items-center lg:items-start mt-5 h-[18rem] relative lg:space-x-8 ">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start  h-[18rem] relative lg:space-x-8 ">
             {/* Left: Heading */}
             <h1 className="text-4xl sm:text-6xl lg:text-4xl font-regular italic text-gray-600 lg:ml-0 lg:mr-auto lg:w-1/3 mb-6 lg:mb-0 relative top-0 pl-10">
               {selectedMachine.title}
@@ -347,15 +347,23 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
                   onClick={closeModal}
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#3a2a79" /* Fill color */
-                    viewBox="0 0 24 24"
-                    width="25" /* Size similar to IoCloseCircleSharp */
-                    height="25"
-                    className="hover:fill-[#483d73] transition-all duration-700 ease-in-out" /* Hover effect */
-                  >
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.536 15.536l-1.414 1.414L12 13.414l-2.121 2.121-1.414-1.414L10.586 12 8.464 9.879l1.414-1.414L12 10.586l2.121-2.121 1.414 1.414L13.414 12l2.122 2.121z" />
-                  </svg>
+  xmlns="http://www.w3.org/2000/svg"
+  fill="#3a2a79" /* Fill color */
+  viewBox="0 0 24 24"
+  width="25" /* Size similar to IoCloseCircleSharp */
+  height="25"
+  className="hover:fill-[#483d73] transition-all duration-700 ease-in-out" /* Hover effect */
+>
+  <circle cx="12" cy="12" r="12" fill="#3a2a79" /> {/* Circle background */}
+  <path
+    fill="none"
+    stroke="white"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M15.536 8.464L12 12m0 0L8.464 8.464m3.536 3.536L8.464 15.536m3.536-3.536l3.536 3.536"
+  />
+</svg>
                 </button>
               </div>
 
