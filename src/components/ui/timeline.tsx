@@ -28,7 +28,7 @@ export const Timeline = () => {
   return (
     <div className="w-full">
       <div className="w-full dark:bg-neutral-950 font-sans" ref={containerRef}>
-        <div className="max-w-8xl mx-auto py-5 md:py-9 px-4 md:px-8 lg:px-10 bg-black bg-sticky top-0 z-50">
+        <div className="max-w-8xl mx-auto py-5 md:py-9 px-4 md:px-8 lg:px-10 bg-black sticky top-0 z-50">
           <h2 className="text-2xl lg:text-3xl font-poppins font-medium text-white dark:text-white text-center lg:mt-9 mt-10">
             Our <span className="text-red-600"> History </span>
           </h2>

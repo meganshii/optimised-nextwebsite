@@ -216,3 +216,34 @@ body {
 .animate-scroll-testimonial:hover {
   animation-play-state: paused;
 }
+
+.sticky-gradient-wrapper {
+  position: sticky;
+  top: 5%; /* This ensures the gradient sticks to the top */
+  z-index: 30;
+  height: 230px; /* Adjust this height as needed */
+}
+
+.mass-gradient-timeline {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 115%;
+  z-index: 30;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-color: black; /* For visibility, adjust the color as needed */
+}

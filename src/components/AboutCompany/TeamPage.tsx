@@ -47,6 +47,7 @@ export default function TeamPage() {
         </h1>
       </div>
       <video
+      id="background-video"
         ref={videoRef}
         className="absolute lg:top-0 top-24 left-0 lg:w-full lg:h-[40rem]  object-cover w-full "
         src={teampage.video}
