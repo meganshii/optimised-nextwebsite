@@ -186,7 +186,12 @@
   ],
 
   "Featureheading": {
-    "title": "Featured Projects"
+    "title": "Featured Projects",
+    "featuredpage":"Nessco",
+    "featuredpagehighlight":"Featured Projects",
+    "button":"Read more",
+    "banner1":"Innovative packaging solution,",
+    "banner2":" One Machine at a Time"
   },
   "machines": [
     {
@@ -238,57 +243,57 @@
       "id": 11,
       "title": "Rectangular flat bottom machines  for Horeca",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging.offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packagingoffers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging.offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging.offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging...",
-      "mainImage": "/assets/featuredprojects/2.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154326/seojp1tcqfwxlcwenxgg.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 12,
       "title": "Paper based disposable plant in Morbi, Gujarat",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
-      "mainImage": "/assets/featuredprojects/3.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154372/ogjdfopiqokhhwxevqpo.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 13,
       "title": "Paper based disposable plant in Morbi, Gujarat",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
-      "mainImage": "/assets/featuredprojects/4.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154374/fycsmnx7nagy2ibostbe.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 14,
       "title": "Rectangular flat bottom machines  for Horeca",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
-      "mainImage": "/assets/featuredprojects/5.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154372/ewihvsznhw2k3u0ioyxi.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 15,
       "title": "Rectangular flat bottom machines  for Horeca",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
-      "mainImage": "/assets/featuredprojects/2.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154326/seojp1tcqfwxlcwenxgg.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 16,
       "title": "Paper based disposable plant in Morbi, Gujarat",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
       "mainImage": "/assets/featuredprojects/3.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 17,
       "title": "Paper based disposable plant in Morbi, Gujarat",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
-      "mainImage": "/assets/featuredprojects/4.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154372/ogjdfopiqokhhwxevqpo.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     },
     {
       "id": 18,
       "title": "Paper based disposable plant in Morbi, Gujarat",
       "description": "Nessco offers a leakage-free dome lid base solution designed to enhance the safety and reliability of food and beverage packaging. ",
-      "mainImage": "/assets/featuredprojects/5.png",
-      "mobileimg": "/assets/about/sustain/machine.svg"
+      "mainImage": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154374/fycsmnx7nagy2ibostbe.png",
+      "mobileimg": "https://res.cloudinary.com/dlti4o10e/image/upload/v1729154485/machine_vackdm.svg"
     }
   ],
   "Awardheading": {
