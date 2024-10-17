@@ -1,10 +1,7 @@
 "use client";
 
-import Head from 'next/head';
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 // import { SlArrowRight } from 'react-icons/sl';
-import { gsap } from 'gsap/gsap-core';
 import styles from '../AboutCompany/about.module.css';
 import { sustainableContent } from '../../components/Constants/ourcompany/OurcompanyPage.json'; // Import the dynamic content
 import style  from './Sustainable.module.css'
@@ -41,7 +38,7 @@ const SustainableD = () => {
             {description}
           </p>
           <div className={`${styles.container}`}>
-            <button className={styles.button}>
+            <button aria-label='view button' className={styles.button}>
               {buttonText}
               {/* <SlArrowRight className={styles.icon} />  */}
             </button>

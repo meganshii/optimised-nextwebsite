@@ -1,10 +1,6 @@
-"use client";
-import React, { useState, useCallback, memo, useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { Page1Data } from "../../components/Constants/ourcompany/OurcompanyPage.json";
 import { gsap } from "gsap";
-// import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);

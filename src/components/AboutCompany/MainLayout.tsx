@@ -4,7 +4,7 @@ import Grid from "@/components/AboutCompany/Grid";
 import SustainableD from "@/components/AboutCompany/SustainableD";
 import OurStoryD from "@/components/AboutCompany/OurstoryD";
 import AboutOurcompany from "@/components/AboutCompany/AboutOurcompany";
-import { TimelineDemo } from "@/components/AboutCompany/Timeline";
+import { Timeline } from "../ui/timeline";
 
 
 export default function MainLayout() {
@@ -14,7 +14,7 @@ export default function MainLayout() {
       <SustainableD />
       <OurStoryD />
       <Founders />
-      <TimelineDemo />
+     <Timeline/>
         <Grid />    
       <TeamPage />
     
