@@ -12,7 +12,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   onSearch,
 }) => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [showCategories, setShowCategories] = useState(false);
+  const [showCategories,] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleCategoryChange = (category: string) => {
@@ -28,12 +28,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
     onSearch(e.target.value);
   };
 
-  const filterCategories = (categories: string[], searchTerm: string) => {
-    if (!searchTerm) return categories;
-    return categories.filter((category) =>
-      category.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  };
+
 
   const displayCategories = showCategories
     ? searchbox.categories.map((cat) => cat.name)
