@@ -40,11 +40,11 @@ const Footer: React.FC = () => {
                 <div
                   className={`${styles.footerlistabout} lg:order-none order-last  `}
                 >
-                  <h3
+                  <h1
                     className={`${styles.footerdesctitle} font-poppins text-sm font-semibold invert-0`}
                   >
                     OUR STORES
-                  </h3>
+                  </h1>
                   <div className="flex flex-col -space-y-6 font-poppins hover:text-red-600 w-[3rem] font-light text-xs">
                     {footerData.stores.map((store, index) => (
                       <Link key={index} href="/" passHref>
@@ -52,27 +52,27 @@ const Footer: React.FC = () => {
                       </Link>
                     ))}
                   </div>
-                  <h3
+                  <h1
                     className={`${styles.footerdesctitle} font-poppins text-sm font-semibold invert-0 mt-4 lg:w-[10rem]`}
                   >
                     BUSINESS PARTNERS
-                  </h3>
+                  </h1>
                   <p className="mt-3 font-light text-xs lg:w-[8rem] font-poppins hover:text-red-600 cursor-pointer invert-0">
                     {footerData.businessPartners}
                   </p>
-                  <h3
+                  <h1
                     className={`${styles.footerdesctitle} font-poppins text-sm font-semibold invert-0 mt-4 lg:w-[10rem]`}
                   >
                     LANGUAGE & REGION
-                  </h3>
+                  </h1>
                   <p className="mt-3 font-light text-xs font-poppins hover:text-red-600 cursor-pointer invert-0 lg:w-[5rem]">
                     India | English
                   </p>
-                  <h3
+                  <h1
                     className={`${styles.footerdesctitle} font-semibold font-poppins invert-0 text-sm mt-8 lg:w-[14rem]`}
                   >
                     AWARDS & CERTIFICATIONS
-                  </h3>
+                  </h1>
                   <div className="flex flex-row lg:w-[35rem] w-[24rem] -ml-2">
                     {footerData.awards.map((award, index) => (
                       <div aria-label="Footer Icon" key={index}>
@@ -96,9 +96,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col w-[18%] relative -left-[10rem] lg:left-16 ">
-                  <h3 className="font-semibold font-poppins text-sm  invert-0">
+                  <h1 className="font-semibold font-poppins text-sm  invert-0">
                     CLIENTELE
-                  </h3>
+                  </h1>
                   <div className={styles.footerlistslink}>
                     <Link href="/" passHref>
                       <p className="font-poppins text-xs font-light mt-4 w-[5rem] hover:text-red-600 cursor-pointer invert-0">
@@ -106,9 +106,9 @@ const Footer: React.FC = () => {
                       </p>
                     </Link>
                   </div>
-                  <h3 className="font-semibold text-sm invert-0 font-poppins mt-5">
+                  <h1 className="font-semibold text-sm invert-0 font-poppins mt-5">
                     CAREERS
-                  </h3>
+                  </h1>
                   <div className="text-xs font-light font-poppins -space-y-7 hover:text-red-600 cursor-pointer invert-0  w-[3rem]">
                     {footerData.careers.map((career, index) => (
                       <Link key={index} href="/" passHref>
@@ -120,9 +120,9 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex-row flex lg:flex-none  lg:mt-0 mt-6 lg:-ml-[30vw]">
                 <div className="w-[20%] ">
-                  <h3 className="font-semibold text-sm font-poppins invert-0">
+                  <h1 className="font-semibold text-sm font-poppins invert-0">
                     LINKS
-                  </h3>
+                  </h1>
                   <div className="font-poppins text-xs font-light space-y-10 hover:text-red-600 invert-0  w-[4rem]">
                     {footerData.links.map((link, index) => (
                       <Link key={index} href="/" passHref>
@@ -133,9 +133,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="w-[20%]  lg:ml-20 ml-10">
-                  <h3 className="font-semibold text-sm font-poppins invert-0">
+                  <h1 className="font-semibold text-sm font-poppins invert-0">
                     LINKS
-                  </h3>
+                  </h1>
                   <div className="font-poppins text-xs font-light space-y-10 hover:text-red-600 w-[4rem] invert-0">
                     {footerData.links.map((link, index) => (
                       <Link key={index} href="/" passHref>
@@ -146,9 +146,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col  w-[30%] lg:ml-20 ml-10 ">
-                  <h3 className="font-semibold font-poppins text-sm invert-0 ">
+                  <h1 className="font-semibold font-poppins text-sm invert-0 ">
                     SERVICES
-                  </h3>
+                  </h1>
                   <div className="font-poppins font-light text-xs w-[8.5rem] hover:text-red-600 cursor-pointer ">
                     {footerData.services.map((service, index) => (
                       <Link key={index} href="/" passHref>
@@ -160,11 +160,11 @@ const Footer: React.FC = () => {
               </div>
 
               <div className="lg:w-[20%] ">
-                <h3
+                <h1
                   className={`${styles.footerdesctitle} font-poppins invert-0 text-sm font-semibold text-center lg:text-left`}
                 >
                   SUBSCRIBE TO NEWSLETTER
-                </h3>
+                </h1>
                 <div className="flex">
                   <input
                     placeholder="Enter your email address"
@@ -175,11 +175,11 @@ const Footer: React.FC = () => {
 
                 <div className="flex lg:flex-col ">
                   <div className="  ">
-                    <h3
+                    <h1
                       className={`${styles.footerdesctitle} font-semibold  invert-0 text-sm font-poppins mt-[1.6rem]`}
                     >
                       CONTACT US
-                    </h3>
+                    </h1>
                     <div
                       className={`${styles.footerlistslink} hover:text-red-600 cursor-pointer font-poppins text-xs font-light invert-0 w-[7rem] `}
                     >
@@ -193,11 +193,11 @@ const Footer: React.FC = () => {
                     <div className="flex flex-row space-x-2 mt-5  "></div>
                   </div>
                   <div>
-                    <h3
+                    <h1
                       className={`${styles.footerdesctitle} font-poppins invert-0 text-sm font-semibold lg:mt-5 mt-7`}
                     >
                       ADDRESS
-                    </h3>
+                    </h1>
                     <div className="font-poppins hover:text-red-600 cursor-pointer text-xs font-light mt-2  invert-0 ">
                       <p className=" lg:w-[14rem] w-[12rem]">
                         {footerData.address}

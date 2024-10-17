@@ -90,114 +90,61 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
   }, []);
 
   useEffect(() => {
-    // Create a GSAP timeline
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: horizontalLineRef.current,
-        start: "top 80%",
-        once: true, // Trigger the animation only once
-      },
-    });
-
-    // Animate the horizontal line
-    tl.fromTo(
-      horizontalLineRef.current,
-      { width: 0 },
-      {
-        width: "100%",
-        duration: 2,
-        ease: "power3.out",
-      }
-    );
-
-    // Animate the vertical lines and images after the horizontal line animation
-    verticalLinesRef.current.forEach((line, index) => {
-      if (line) {
-        tl.fromTo(
-          line,
-          { y: 0, height: 0 }, // Start off-screen (above)
-          {
-            y: 0, // Slide into view
-            height: "17rem",
-            z: 10,
-            duration: 2, // 3-second duration for smooth transition
-            ease: "power3.out",
-            delay: 0.3, // Staggered delay based on index for visual effect
-          },
-          "-=2" // Start animation for vertical lines 2 seconds before the horizontal line animation ends
-        );
-
-        const image = imagesRef.current[index];
-        if (image) {
+    // Set a delay for 5 seconds before the animation starts
+    const timeoutId = setTimeout(() => {
+      // Create a GSAP timeline without ScrollTrigger
+      const tl = gsap.timeline();
+  
+      // Animate the horizontal line
+      tl.fromTo(
+        horizontalLineRef.current,
+        { width: 0 },
+        {
+          width: "100%",
+          duration: 2,
+          ease: "power3.out",
+        }
+      );
+  
+      // Animate the vertical lines and images after the horizontal line animation
+      verticalLinesRef.current.forEach((line, index) => {
+        if (line) {
           tl.fromTo(
-            image,
-            { y: 10, opacity: 0 },
+            line,
+            { y: 0, height: 0 }, // Start off-screen (above)
             {
-              y: 0,
-              opacity: 1,
-              duration: 1,
+              y: 0, // Slide into view
+              height: "17rem",
+              z: 10,
+              duration: 2, // 2-second duration for smooth transition
               ease: "power3.out",
+              delay: 0.3, // Staggered delay based on index for visual effect
             },
-            "-=2" // Start animation for images 2 seconds before the vertical lines animation ends
+            "-=2" // Start animation for vertical lines 2 seconds before the horizontal line animation ends
           );
+  
+          const image = imagesRef.current[index];
+          if (image) {
+            tl.fromTo(
+              image,
+              { y: 10, opacity: 0 },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power3.out",
+              },
+              "-=2" // Start animation for images 2 seconds before the vertical lines animation ends
+            );
+          }
         }
-      }
-    });
+      });
+    }, 5000); // Delay the animation by 5 seconds
+  
+    // Clean up the timeout if the component unmounts
+    return () => clearTimeout(timeoutId);
   }, []);
-
-  useEffect(() => {
-    gsap.to(".page1-h1", {
-      scrollTrigger: {
-        trigger: ".page1-h1",
-        start: "top top+=1",
-        end: "+=100",
-        scrub: true,
-      },
-      height: "16vh",
-      fontSize: "2rem",
-      backdropFilter: "blur(30px)",
-      background: "transparent",
-      color: "#424242",
-      fontWeight: "500",
-      paddingTop: "6.4vh",
-      ease: "power1.out",
-    });
-  }, []);
-
-  useEffect(() => {
-    if (borderRef.current) {
-      gsap.fromTo(
-        borderRef.current,
-        { width: "2%" },
-        {
-          width: "10%",
-          ease: "none",
-          scrollTrigger: {
-            trigger: carouselRef.current,
-            start: "50% 50%",
-            end: "140% 60%",
-            scrub: true,
-          },
-        }
-      );
-    }
-  }, []);
-
-  useEffect(() => {
-    // Animate the gradient on page load, no scroll needed
-    if (gradientRef.current) {
-      gsap.fromTo(
-        gradientRef.current,
-        { backgroundSize: "0% 100%" },
-        {
-          backgroundSize: "100% 100%",
-          duration: 1,
-          ease: "power1.out",
-        }
-      );
-    }
-  }, []);
-
+  
   return (
     <div className="h-full relative overflow-hidden">
       <div
