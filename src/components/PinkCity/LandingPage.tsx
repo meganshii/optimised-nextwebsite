@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <div className="bg-gray-100 flex flex-col p-5  h-full lg:p-6 lg:h-[40rem] overflow-hidden">
       {/* Background Image Container */}
-      <div className="relative w-full lg:h-[27rem]  lg:mt-10 mt-16 lg:left-0 h-[36rem] ">
+      <div className="relative w-full lg:h-[27rem]  lg:mt-10 mt-16 lg:left-0 h-[36rem] bg-gray-50">
         <Image
           src={landingPageContent.backgroundImg}
           alt="Jaipur"
@@ -36,6 +36,7 @@ const LandingPage = () => {
             alt="Stroke"
             width={300}
             height={300}
+            priority
           />
         </div>
 
@@ -56,6 +57,7 @@ const LandingPage = () => {
         alt="The Pink City"
         width={300}
         height={300}
+        priority
         className="object-contain"
       />
     </div>

@@ -45,7 +45,7 @@ const SecondPage = () => {
           alt="Jaipur"
           width={400}
           height={400}
-          className="rounded-lg z-10 lg:w-[21rem] lg:h-[20rem] w-[11rem] h-[11rem] md:w-[20rem] md:h-[20rem] absolute"
+          className="rounded-lg z-10 lg:w-[21rem] lg:h-[20rem] w-[11rem] h-[11rem] md:w-[20rem] md:h-[20rem] absolute object-cover"
         />
         <Image
           src={secondPageContent.mandalaImg}

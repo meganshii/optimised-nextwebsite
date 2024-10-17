@@ -64,7 +64,7 @@ const PinkPage = () => {
           alt="Jaipur"
           width={400}
           height={400}
-          className="rounded-full lg:w-[17rem] lg:h-[17rem] w-[13rem] h-[13rem] md:w-[17rem] md:h-[17rem]  absolute "
+          className="rounded-full lg:w-[17rem] lg:h-[17rem] w-[13rem] h-[13rem] md:w-[17rem] md:h-[17rem]  absolute object-cover"
         />
         <Image
           src={pinkPageContent.mandalaImg}
