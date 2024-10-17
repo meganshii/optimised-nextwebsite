@@ -16,6 +16,7 @@ interface GridItem {
   mainImage: string;
 }
 
+
 interface Machine {
   id: number;
   title: string;
