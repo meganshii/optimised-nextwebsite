@@ -1,5 +1,4 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import seoData from "@/components/Constants/contact/branches.json"; // Importing the JSON array
 import { Metadata } from "next";
 import Branches from "@/components/Contact-page/Branches";
