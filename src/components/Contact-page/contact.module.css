@@ -1,5 +1,5 @@
 .contact{
-    width: 94%;
+    width: 100%;
     min-height: 60vh;
     position: relative;
     background-color: white;
@@ -388,3 +388,20 @@
         width: 100%;
     }
 }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); /* Hidden off-screen */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.cupslide {
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+
