@@ -118,7 +118,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
           <input
             type="search"
             placeholder={searchbox.placeholder}
-            style={{ fontSize: "0.8rem", color: "black" }}
+            style={{ fontSize: "0.8rem"}}
             className="w-full py-[0.3rem] px-[1rem] outline-none bg-transparent text-black font-poppins "
             value={searchTerm}
             onChange={handleSearchChange}

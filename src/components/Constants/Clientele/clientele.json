@@ -1,0 +1,55 @@
+{
+    "clienteleSeoData": {
+        "title": "clientele Manufacturer and Supplier - Nessco India",
+        "description": "Trusted About Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+        "keywords": "Nessco India",
+        "openGraph": {
+          "title": "About Manufacturer and Supplier - Nessco India",
+          "description": "Trusted About Manufacturer since 1978. Nessco offers a wide range of paper cup making machine pairing with the latest technology. Enquire now!",
+          "images": [
+            {
+              "url": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp",
+              "alt": "Fully Automatic Paper Cup Making Machine"
+            }
+          ]
+        },
+        "robots": "index, follow",
+    
+        "alternates": {
+          "canonical": "https://www.nesscoindia.com"
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "site": "@NesscoIndia",
+          "title": "About Manufacturer - Nessco India",
+          "description": "Nessco India provides top-quality paper cup making machines paired with the latest technology. Enquire today!",
+          "image": "https://www.nesscoindia.com/Assets/images/resource/fully-automatic-paper-cup-making-machine.webp"
+        }
+      },
+
+     "content": {
+    "heading": {
+      "title": "Clientele",
+      "boldHeading": "More than 1000 customers",
+      "peraOne": "We are fortunate to have produced presentation materials for all sectors of activity and company sizes, in all graphic universes.",
+      "peraTwo": "37 CAC40 companies have placed their trust in us.",
+      "lefthand":"https://res.cloudinary.com/dlti4o10e/image/upload/v1729225332/qcj2k2wh8s8bagpaqna5.avif",
+      "righthand":"https://res.cloudinary.com/dlti4o10e/image/upload/v1729225348/kvkqjpkpb9jga3bkvxaq.avif"
+    },
+   
+   "squareData": [
+    { "id": 1, "src": "/assets/clientele/10.svg", "bgClass": "bg-circular-gradient-blue" },
+    { "id": 2, "src": "/assets/clientele/11.svg", "bgClass": "bg-circular-gradient-red" },
+    { "id": 3, "src": "/assets/clientele/12.svg", "bgClass": "bg-circular-gradient-blue" },
+    { "id": 4, "src": "/assets/clientele/13.svg", "bgClass": "bg-circular-gradient-red" },
+    { "id": 5, "src": "/assets/clientele/14.svg", "bgClass": "bg-circular-gradient-red" },
+    { "id": 6, "src": "/assets/clientele/15.svg", "bgClass": "bg-circular-gradient-blue" },
+    { "id": 7, "src": "/assets/clientele/10.svg", "bgClass": "bg-circular-gradient-red" },
+    { "id": 8, "src": "/assets/clientele/11.svg", "bgClass": "bg-circular-gradient-blue" },
+    { "id": 9, "src": "/assets/clientele/12.svg", "bgClass": "bg-circular-gradient-blue" },
+    { "id": 10, "src": "/assets/clientele/13.svg", "bgClass": "bg-circular-gradient-red" },
+    { "id": 11, "src": "/assets/clientele/14.svg", "bgClass": "bg-circular-gradient-blue" },
+    { "id": 12, "src": "/assets/clientele/15.svg", "bgClass": "bg-circular-gradient-red" }
+  ]
+}
+}
