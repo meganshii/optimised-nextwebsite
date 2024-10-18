@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./contact.module.css";
 
 const Contactnew: React.FC = () => {
   return (
@@ -162,9 +161,9 @@ const Contactnew: React.FC = () => {
       </div>
 
       {/* Cup Image on the right side */}
-      <div className={`absolute right-0 top-[8rem] rounded-full  mb-8 mr-8 lg:visible invisible  ${styles.cupslide}`}>
+      <div className={`absolute right-0 top-[8rem] rounded-full  mb-8 mr-8 lg:visible invisible  `}>
         <Image
-          src="/assets/contact/cup3.svg"
+          src="https://res.cloudinary.com/dlti4o10e/image/upload/v1729244138/aijqvtnk9qbbcqybyngf.avif"
           alt="Cup"
           height={200}
           width={200}
@@ -172,9 +171,9 @@ const Contactnew: React.FC = () => {
           className="object-cover"
         />
       </div>
-      <div className={`absolute left-[13rem] top-[6rem]  mb-8 mr-8 lg:visible invisible ${styles.cupslide}`}>
+      <div className={`absolute left-[13rem] top-[6rem]  mb-8 mr-8 lg:visible invisible `}>
         <Image
-          src="/assets/contact/cup2.svg"
+          src="https://res.cloudinary.com/dlti4o10e/image/upload/v1729244165/fe5y7ycn7fheiyjd6m8t.avif"
           alt="Cup"
           height={100}
           width={100}
@@ -182,9 +181,9 @@ const Contactnew: React.FC = () => {
           className="object-cover"
         />
       </div>
-      <div className={`absolute left-0 top-[20rem]  mb-8 mr-8 lg:visible invisible ${styles.cupslide} `}>
+      <div className={`absolute left-0 top-[20rem]  mb-8 mr-8 lg:visible invisible `}>
         <Image
-          src="/assets/contact/cup1.svg"
+          src="https://res.cloudinary.com/dlti4o10e/image/upload/v1729244113/oqgfrlc3gyggb6lmo2kh.avif"
           alt="Cup"
           height={200}
           width={200}
