@@ -2,8 +2,9 @@ import React from "react";
 import dynamic from "next/dynamic";
 import seoData from "@/components/Constants/contact/branches.json"; // Importing the JSON array
 import { Metadata } from "next";
-
+import Branches from "@/components/Contact-page/Branches";
 import Contactnew from "@/components/Contact-page/Contactnew";
+import Reach from "@/components/Contact-page/Reach";
 
 
 // Define HomeSeoData interface to match your JSON structure
@@ -67,8 +68,6 @@ export async function generateMetadata(): Promise<Metadata> {
     };
   }
 
-
-
   return {
     title: metadata.title,
     description: metadata.description,
@@ -102,12 +101,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const Branches = dynamic(() => import("@/components/Contact-page/Branches"), {
-  ssr: false,
-});
-const Reach = dynamic(() => import("@/components/Contact-page/Reach"), {
-  ssr: false,
-});
+
 
 
 
