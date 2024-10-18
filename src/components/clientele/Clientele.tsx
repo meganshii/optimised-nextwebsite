@@ -25,7 +25,7 @@ const Clientele: React.FC = () => {
       x: moveX, // Move right
       duration: 4,
       ease: "power2.inOut",
-      delay: 1, // Delay before starting the animation
+      delay: 5, // Delay before starting the animation
     })
       .to(rightHandRef.current, {
         x: -moveX, // Move left
