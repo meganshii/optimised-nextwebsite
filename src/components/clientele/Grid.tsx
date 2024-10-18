@@ -5,20 +5,8 @@ import Image from 'next/image';
 import styles from './client.module.css'; // Import CSS module
 
 // Square data
-const squareData = [
-  { id: 1, src: "/assets/clientele/10.svg", bgClass: "bg-circular-gradient-blue" },
-  { id: 2, src: "/assets/clientele/11.svg", bgClass: "bg-circular-gradient-red" },
-  { id: 3, src: "/assets/clientele/12.svg", bgClass: "bg-circular-gradient-blue" },
-  { id: 4, src: "/assets/clientele/13.svg", bgClass: "bg-circular-gradient-red" },
-  { id: 5, src: "/assets/clientele/14.svg", bgClass: "bg-circular-gradient-red" },
-  { id: 6, src: "/assets/clientele/15.svg", bgClass: "bg-circular-gradient-blue" },
-  { id: 7, src: "/assets/clientele/10.svg", bgClass: "bg-circular-gradient-red" },
-  { id: 8, src: "/assets/clientele/11.svg", bgClass: "bg-circular-gradient-blue" },
-  { id: 9, src: "/assets/clientele/12.svg", bgClass: "bg-circular-gradient-blue" },
-  { id: 10, src: "/assets/clientele/13.svg", bgClass: "bg-circular-gradient-red" },
-  { id: 11, src: "/assets/clientele/14.svg", bgClass: "bg-circular-gradient-blue" },
-  { id: 12, src: "/assets/clientele/15.svg", bgClass: "bg-circular-gradient-red" },
-];
+import clienteleData from '@/components/Constants/Clientele/clientele.json';
+
 
 // Utility function to get a sliding animation class
 const getSlidingDirectionClass = () => {
@@ -30,12 +18,13 @@ const getSlidingDirectionClass = () => {
   ];
   return directions[Math.floor(Math.random() * directions.length)];
 };
+const { squares } = clienteleData;
+
 
 // Generate square components
-const generateSquares = (data: typeof squareData, isFadingOut: boolean) => {
+const generateSquares = (data: typeof squares, isFadingOut: boolean) => {
   return data.map((sq) => {
     const animationClass = getSlidingDirectionClass();
-
     return (
       <div
         key={sq.id}
@@ -60,7 +49,7 @@ const generateSquares = (data: typeof squareData, isFadingOut: boolean) => {
 
 // Main ShuffleGrid component
 const ShuffleGrid = () => {
-  const [squares, setSquares] = useState(generateSquares(squareData, false));
+  const [Squares, setSquares] = useState(generateSquares(squares, false));
   const [ isFadingOut, setIsFadingOut] = useState(false); // Track fading state
 
   useEffect(() => {
@@ -69,7 +58,7 @@ const ShuffleGrid = () => {
 
       // After fade-out, change squares and fade in
       setTimeout(() => {
-        setSquares(generateSquares(squareData, false)); // Update squares
+        setSquares(generateSquares(squares, false)); // Update squares
         setIsFadingOut(false); // Fade back in
       }, 4000); // Matches the fade-out duration
     };
@@ -82,7 +71,7 @@ const ShuffleGrid = () => {
   return (
     <div className="lg:h-[40rem] lg:w-full w-full h-[40rem] bg-black lg:p-10">
       <div className={`grid lg:grid-cols-4 grid-cols-2 lg:gap-3 gap-2 lg:h-full lg:w-full h-full w-full ${isFadingOut ? 'fade-out' : 'fade-in'}`}>
-      {squares}
+        {Squares}
       </div>
     </div>
   );
