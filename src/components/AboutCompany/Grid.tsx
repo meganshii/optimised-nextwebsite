@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { images } from '../../components/Constants/ourcompany/OurcompanyPage.json'; // Update the path as needed
+import { images,viewgallery } from '../../components/Constants/ourcompany/OurcompanyPage.json'; // Update the path as needed
 import Style from './about.module.css';
 
 const Grid = () => {
@@ -15,7 +15,7 @@ const Grid = () => {
       <div className='absolute w-full top-1/2 z-30'>
       <h1 className=' lg:text-6xl text-5xl z-30 lg:top-1/2 top-[23.5rem] lg:left-1/2  font-poppins justify-center text-center flex flex-col text-white font-medium '>Gallery</h1>
       <button aria-label='view button' className="  z-30 bg-white font-poppins font-regular  lg:top-[58%] top-[24rem] text-black px-3 py-2 text-lg rounded-2xl ml-[38%] lg:ml-[45%] mt-2 hover:text-white hover:bg-black hover:font-medium">
-        View Gallery
+        {viewgallery}
       </button>
       </div>
       {images.map((img, idx) => (

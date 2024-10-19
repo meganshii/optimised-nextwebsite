@@ -23,7 +23,7 @@ const LandingPage = () => {
       {/* Title */}
       <div className='w-full absolute top-[15rem] justify-center text-center right-0 lg:relative lg:-top-16 lg:w-0  lg:-mt-52 lg:left-12'>
       <h2 className="    font-poppins text-white text-8xl lg:text-9xl ">
-        Jaipur
+        {landingPageContent.jaipur}
       </h2>
       </div>
 

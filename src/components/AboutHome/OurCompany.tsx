@@ -3,7 +3,7 @@
 import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import Page4 from "./carasoul";
-import { companyContent } from "../Constants/About/AboutUsPage.json"; // Adjust path as needed
+import { companyContent,missionvissionContent } from "../Constants/About/AboutUsPage.json"; // Adjust path as needed
 // import MobileCarousel from "./Mobilecarasouel";
 import dynamic from "next/dynamic";
 
@@ -71,7 +71,7 @@ const OurCompany: FC = () => {
       </div>
       <div className="flex justify-center bg-slate-50">
         <button aria-label="read-more" className=" absolute bottom-3  text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
-          Read More
+          {missionvissionContent.button}
         </button>
       </div>
     </div>

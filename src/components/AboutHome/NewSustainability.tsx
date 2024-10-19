@@ -12,7 +12,7 @@ import {
 
 import {
   slides,
-  Sustainabilityheading,
+  Sustainabilityheading,missionvissionContent
 } from "../Constants/About/AboutUsPage.json";
 import dynamic from "next/dynamic";
 
@@ -78,11 +78,11 @@ const NewSustainability: React.FC = () => {
                               {/* <IoArrowRedoSharp size={20} /> */}
                             </p>
                             <h4 className="lg:invisible visible  text-black relative text-sm left-24 pl-1  font-bold">
-                              Our Approach
+                              {Sustainabilityheading.Approach}
                             </h4>
                           </div>
 
-                          <div className="flex items-center justify-center lg:space-x-12  relative lg:top-0 top-14 md:top-20 w-full h-[10rem] md:h-[15rem]">
+                          <div className="flex items-center justify-center lg:space-x-12  relative lg:top-0 top- md:top-20 w-full h-[10rem] md:h-[15rem]">
                             <div className="flex-shrink-0 ">
                               <Svglist/>
                             </div>
@@ -215,7 +215,7 @@ const NewSustainability: React.FC = () => {
       </div>
       <div className="flex justify-center">
         <button aria-label="read-more" className="bottom-3 absolute text-center font-poppins border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white rounded-md z-10 w-[8rem] h-[2rem]">
-          Read More
+          {missionvissionContent.button}
         </button>
       </div>
     </div>

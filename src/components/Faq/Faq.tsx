@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
 
   return (
     <div className=" h-[45rem] w-full overflow-hidden">
-        <h1 className="text-5xl font-poppins bg-gradient-to-r from-[#483d73] from-2% via-red-700 via-20% to-red-700 bg-clip-text text-transparent relative mt-20 left-7 font-extrabold ">FAQ s</h1>
+        <h1 className="text-5xl font-poppins bg-gradient-to-r from-[#483d73] from-2% via-red-700 via-20% to-red-700 bg-clip-text text-transparent relative mt-20 left-7 font-extrabold ">{searchbox.title}</h1>
         <div className="lg:flex lg:flex-row flex flex-col   lg:top-10 relative lg:-space-x-4 ">
       <div className="sticky lg:top-[10rem] lg:w-1/5  lg:px-4 p-1 lg:overflow-auto h-[37rem] no-scrollbar ">
         <SearchBox onCategorySelect={handleCategorySelect} onSearch={handleSearch} />

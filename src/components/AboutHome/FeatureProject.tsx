@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
-import { machines, Featureheading } from "../Constants/About/AboutUsPage.json"; // Adjust the import path as needed
+import { machines, Featureheading,missionvissionContent } from "../Constants/About/AboutUsPage.json"; // Adjust the import path as needed
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { GoArrowRight } from "react-icons/GoArrowRight";
@@ -150,7 +150,7 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({}) => {
               </div>
               <div className="flex absolute bottom-2 flex-row border border-[#6f6f6f] rounded-md bg-black  group p-1  cursor-pointer ">
                 <p className="text-white font-regular font-poppins text-xs   ">
-                  View Machine
+                  {Featureheading.viewmachine}
                 </p>
               </div>
             </div>
@@ -247,8 +247,8 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({}) => {
       </div>
 
       <div className="flex justify-center ">
-        <button className="lg:mt-[20rem] mt-[10rem] mb-3 w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10  ">
-          Read More
+        <button className="lg:mt-[20rem] mt-[10rem] mb-3 w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black bg-white text-[#6f6f6f] hover:text-white  rounded-md z-10  ">
+          {missionvissionContent.button}
         </button>
       </div>
     </div>

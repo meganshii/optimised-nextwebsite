@@ -1,5 +1,5 @@
 import React from "react";
-import seoData from "@/components/Constants/contact/branches.json"; // Importing the JSON array
+import seoData from "@/components/Constants/contact/contactContent.json"; // Importing the JSON array
 import { Metadata } from "next";
 import Branches from "@/components/Contact-page/Branches";
 import Contactnew from "@/components/Contact-page/Contactnew";

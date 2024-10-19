@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 // import { IoAddCircle } from "react-icons/io5";
 // import { RxCross2 } from "react-icons/rx";
-import { cards, Heading } from "../Constants/About/AboutUsPage.json";
+import { cards, Heading ,missionvissionContent} from "../Constants/About/AboutUsPage.json";
 import dynamic from "next/dynamic";
 // import { IoIosCloseCircle } from "react-icons/io";
 
@@ -195,7 +195,7 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className=" lg:flex flex  flex-col-reverse lg:flex-row justify-between items-center bg-[#f7f7f7] dark:hover:bg-neutral-800 rounded-2xl cursor-pointer group lg:w-full lg:h-full h-[18rem] md:h-[20rem] relative p-3 lg:p-0"
+            className=" lg:flex flex  flex-col-reverse lg:flex-row justify-between items-center bg-[#f7f7f7]  dark:hover:bg-neutral-800 rounded-2xl cursor-pointer group lg:w-full lg:h-full h-[18rem] md:h-[20rem] relative p-3 lg:p-0"
           >
             <div className="md:flex md:flex-row gap-4 flex-col lg:flex-row lg:p-6 grid grid-cols-1  ">
               <div className=" col-span-1">
@@ -254,7 +254,7 @@ export function ExpandableCardDemo() {
               <div className=" lg:visible invisible relative -left-3  w-[2px] bg-[#2d1f66] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div
                 key={index}
-                className=" lg:p-6 md:p-16 h-[10rem] w-[10rem] lg:w-[9rem] lg:h-[8rem] md:h-[15rem] md:w-[15rem] flex items-center justify-center  lg:bg-[#000088] lg:rounded-tr-2xl lg:rounded-br-2xl transition-colors duration-300 p-7 group "
+                className=" lg:p-6 md:p-16 h-[10rem] w-[10rem] lg:w-[9rem] lg:h-[8rem] md:h-[15rem] md:w-[15rem] flex items-center justify-center  bg-[#000088] lg:rounded-tr-2xl lg:rounded-br-2xl transition-colors duration-300 p-7 group "
               >
                 <Icons/>
               </div>
@@ -265,7 +265,7 @@ export function ExpandableCardDemo() {
       </ul>
       <div className="flex justify-center bg-slate-50">
         <button aria-label="read-more" className=" absolute bottom-3 w-[8rem]  text-base hover:font-medium font-normal font-poppins h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
-          Read More
+         {missionvissionContent.button}
         </button>
       </div>
     </div>

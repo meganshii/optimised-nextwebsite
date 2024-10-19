@@ -81,7 +81,8 @@
 
   "ourfounderheading": {
     "title": "Our ",
-    "highlight": "Founders"
+    "highlight": "Founders",
+    "caption": "The work we do reflect who we are"
   },
   "founders": [
     {
@@ -106,7 +107,7 @@
       "linkedInUrl": "#"
     }
   ],
-
+  "viewgallery": "View Gallery",
   "images": [
     {
       "src": "/assets/about/oldmen.webp",
@@ -160,8 +161,7 @@
     }
   ],
 
-  
-   "Data":[
+  "Data": [
     {
       "title": "1998",
       "description": "Nessco India, founded in 1980, has evolved into a prominent leader in the manufacturing industry. Starting as a small enterprise, the company focused on producing high-quality packaging machinery and equipment. Over the decades, Nessco India has expanded its operations, embracing technological advancements and diversifying its product portfolio to meet the changing needs of the market",
@@ -187,8 +187,7 @@
       "description": "Nessco India, founded in 1980, has evolved into a prominent leader in the manufacturing industry. Starting as a small enterprise, the company focused on producing high-quality packaging machinery and equipment. Over the decades, Nessco India has expanded its operations, embracing technological advancements and diversifying its product portfolio to meet the changing needs of the market",
       "image": "/assets/about/nessco-team.webp"
     }
-  ],  
-  
+  ],
 
   "teampage": {
     "video": "https://res.cloudinary.com/dlti4o10e/video/upload/v1729077376/f8z9q4pdi7s6hgiw0b4r.mp4",

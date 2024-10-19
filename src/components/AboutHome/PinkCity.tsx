@@ -1,7 +1,7 @@
 // components/Gallery.tsx
 "use client";
 import Image from "next/image";
-import { galleryfour } from "../Constants/About/AboutUsPage.json";
+import { galleryfour,missionvissionContent } from "../Constants/About/AboutUsPage.json";
 import { useEffect, useState } from "react";
 // import { GoArrowRight } from "react-icons/go";
 
@@ -113,7 +113,7 @@ const PinkCity = () => {
         </div>
         <div className="bg-slate-50 absolute bottom-3 rounded-md ">
           <button aria-label="read-more" className="text-base hover:font-medium font-normal font-poppins w-[8rem] h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
-            Read More
+            {missionvissionContent.button}
           </button>
         </div>
       </div>

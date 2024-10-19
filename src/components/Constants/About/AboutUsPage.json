@@ -37,6 +37,7 @@
   },
   "missionvissionContent": {
     "title": "Mission & Vision",
+    "button":"Read more",
     "slides": [
       {
         "title": "Mission",
@@ -150,7 +151,9 @@
   },
 
   "Sustainabilityheading": {
-    "title": " Sustainability"
+    "title": " Sustainability",
+    "Approach":"Our Approach"
+
   },
   "slides": [
     {
@@ -191,7 +194,8 @@
     "featuredpagehighlight":"Featured Projects",
     "button":"Read more",
     "banner1":"Innovative packaging solution,",
-    "banner2":" One Machine at a Time"
+    "banner2":" One Machine at a Time",
+    "viewmachine":"View Machine"
   },
   "machines": [
     {

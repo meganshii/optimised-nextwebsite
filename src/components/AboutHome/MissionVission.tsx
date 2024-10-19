@@ -169,7 +169,7 @@ export default function Missionvission() {
 
       <div aria-label="read-more" className="flex justify-center bg-slate-50 ">
         <button className=" absolute bottom-3  w-[8rem] text-base hover:font-medium font-normal font-poppins h-[2rem] items-center justify-center text-center border border-[#6f6f6f] hover:bg-black text-[#6f6f6f] hover:text-white  rounded-md z-10 ">
-          Read More
+        {missionvissionContent.button}
         </button>
       </div>
     </div>

@@ -30,6 +30,8 @@
     "filter": "Filters",
     "byCategory": "By Category",
     "placeholder": "Search Filter",
+    "Questions":"Questions Related to",
+    "title":"FAQ s",
     "categories": [
       {
         "name": "Paper Bag",

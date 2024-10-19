@@ -86,25 +86,25 @@ const Footer: React.FC = () => {
                 >
                   {footerData.awarTitle}
                 </h1>
-                <div className="flex flex-row  lg:w-[35rem] w-[24rem] -ml-2">
-                  {footerData.awards.map((award, index) => (
-                    <p aria-label="Footer Icon" key={index}>
+                <div className="flex flex-row  lg:w-[35rem] lg:h-[3rem] w-[24rem]  mb-5">
+                 
+                    <p aria-label="Footer Icon" >
                       <a
                         href="https://www.example.com"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <Image
-                          src={award.src}
-                          alt={award.alt}
+                          src="https://assets.nesscoindustries.com/public/assets/footer/certificate.webp"
+                          alt="award"
                           width={200} // Adjust the size as needed
                           height={200} // Adjust the size as needed
-                          style={{ height: "7rem", width: "12rem" }}
-                          className={`scale-125 transform transition-transform duration-300 hover:scale-150 ${certificateColorClass}`}
+                         
+                          className={` transform transition-transform duration-300 h-full w-full object-cover ${certificateColorClass}`}
                         />
                       </a>
                     </p>
-                  ))}
+              
                 </div>
               </div>
 
