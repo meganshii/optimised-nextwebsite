@@ -3,6 +3,29 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import contentData from "../Constants/contact/contactContent.json"; // Import your JSON
 
+interface MainContentItem {
+
+  id: number;        // Assuming there's an id
+  title: string;     // Assuming there's a title
+  description: string; // Assuming there's a description
+  image: Image; 
+  textAfterImage:string;
+  textBeforeImage:string;
+  
+  // Add other properties based on your actual structure
+}
+interface Image {
+  src: string;
+  height: number;
+  width: number;
+  alt: string;
+}
+
+
+interface Content {
+  mainContent: MainContentItem[];
+  // Add other properties based on your actual structure
+}
 const Contactnew: React.FC = () => {
   const [content, setContent] = useState<any>(null);
 
@@ -17,7 +40,7 @@ const Contactnew: React.FC = () => {
     <div className="h-full bg-gray-100 items-center flex flex-col font-poppins relative">
       {/* Main content */}
       <div className="mt-12 p-5">
-        {content.mainContent.map((item: any, index: number) => (
+        {content.mainContent.map((item: MainContentItem, index: number) => (
           <p
             key={index}
             className="font-poppins font-semibold lg:text-2xl text-lg flex items-center justify-center w-full"

@@ -9,7 +9,7 @@ import Awards from "@/components/AboutHome/Awards";
 import Homenew from "@/components/AboutHome/Homenew";
 import { ExpandableCardDemo } from "@/components/AboutHome/NewOurstrenght";
 import NewSustainability from "@/components/AboutHome/NewSustainability";
-import NavLinksDemo from "./NavLink";
+// import NavLinksDemo from "./NavLink";
 
 
 
@@ -26,15 +26,15 @@ export default function MainLayout ()
     const awardRef = useRef<HTMLDivElement>(null);
    
 
-    const navItems = [
-        { text: "Mission & Vision", ref: missionRef },
-        { text: "Our Company", ref: ourcompanyRef },
-        { text: "Our Strenght", ref: ourstrenghtRef },
-        { text: "The Pink City", ref: pinkcityRef },
-        { text: "Sustainability", ref: sustainableRef },
-        { text: "Featured Projects", ref: featureprojectRef },
-        { text: "Awards", ref:awardRef},
-      ];
+    // const navItems = [
+    //     { text: "Mission & Vision", ref: missionRef },
+    //     { text: "Our Company", ref: ourcompanyRef },
+    //     { text: "Our Strenght", ref: ourstrenghtRef },
+    //     { text: "The Pink City", ref: pinkcityRef },
+    //     { text: "Sustainability", ref: sustainableRef },
+    //     { text: "Featured Projects", ref: featureprojectRef },
+    //     { text: "Awards", ref:awardRef},
+    //   ];
 
 
     return(

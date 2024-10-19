@@ -1,9 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import NavbarDemo from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
-import FooterNew from "@/components/Footer/FooterNew";
 import FooterLayout from "@/components/Footer/FooterLayout";
 
 // Initialize the fonts with the correct configurations and use "font-display: swap"

@@ -111,24 +111,9 @@ export function ExpandableCardDemo() {
               className="absolute right-0"
               onClick={handleClose}
             >
-               <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="30" // Adjust the width as needed
-      height="30" // Adjust the height as needed
-      viewBox="0 0 24 24"
-   
-    >
-      {/* Circular background */}
-      <circle cx="12" cy="12" r="10" fill="#3a2a79" />
-      {/* Cross sign */}
-      <path
-        d="M6 18L18 6M6 6l12 12"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16.414,15 c0,0,3.139,3.139,3.293,3.293c0.391,0.391,0.391,1.024,0,1.414c-0.391,0.391-1.024,0.391-1.414,0C18.139,19.554,15,16.414,15,16.414 s-3.139,3.139-3.293,3.293c-0.391,0.391-1.024,0.391-1.414,0c-0.391-0.391-0.391-1.024,0-1.414C10.446,18.139,13.586,15,13.586,15 s-3.139-3.139-3.293-3.293c-0.391-0.391-0.391-1.024,0-1.414c0.391-0.391,1.024-0.391,1.414,0C11.861,10.446,15,13.586,15,13.586 s3.139-3.139,3.293-3.293c0.391-0.391,1.024-0.391,1.414,0c0.391,0.391,0.391,1.024,0,1.414C19.554,11.861,16.414,15,16.414,15z"></path>
+</svg>
             </motion.button>
 
             <motion.div
@@ -222,24 +207,9 @@ export function ExpandableCardDemo() {
                     </span>
                   </span>
                   <span className="absolute lg:right-0 block lg:hidden text-[#3a2a79] md:right-5 top-2 right-2 ">
-                  <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="30" // Adjust the width as needed
-      height="30" // Adjust the height as needed
-      viewBox="0 0 24 24"
-      
-    >
-      {/* Circular background */}
-      <circle cx="12" cy="12" r="10" fill="#3a2a79" />
-      {/* Plus sign */}
-      <path
-        d="M12 5v14m-7-7h14"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" fill="#483d73" viewBox="0 0 24 24">
+    <path d="M12,2C6.477,2,2,6.477,2,12s4.477,10,10,10s10-4.477,10-10S17.523,2,12,2z M16,13h-3v3c0,0.552-0.448,1-1,1h0 c-0.552,0-1-0.448-1-1v-3H8c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h3V8c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v3h3 c0.552,0,1,0.448,1,1v0C17,12.552,16.552,13,16,13z"></path>
+</svg>
                   </span>
                   {/* <IoAddCircle
                     className="absolute lg:right-0 block lg:hidden text-[#3a2a79] md:right-5 top-2 right-2 "
@@ -254,7 +224,7 @@ export function ExpandableCardDemo() {
               <div className=" lg:visible invisible relative -left-3  w-[2px] bg-[#2d1f66] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div
                 key={index}
-                className=" lg:p-6 md:p-16 h-[10rem] w-[10rem] lg:w-[9rem] lg:h-[8rem] md:h-[15rem] md:w-[15rem] flex items-center justify-center  bg-[#000088] lg:rounded-tr-2xl lg:rounded-br-2xl transition-colors duration-300 p-7 group "
+                className=" lg:p-6 md:p-16 h-[10rem] w-[10rem] lg:w-[9rem] lg:h-[8rem] md:h-[15rem] md:w-[15rem] flex items-center justify-center  lg:bg-[#000088] lg:rounded-tr-2xl lg:rounded-br-2xl transition-colors duration-300 p-7 group "
               >
                 <Icons/>
               </div>

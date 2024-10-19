@@ -346,23 +346,8 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
                   className="cursor-pointer font-bold"
                   onClick={closeModal}
                 >
-                  <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="#3a2a79" /* Fill color */
-  viewBox="0 0 24 24"
-  width="25" /* Size similar to IoCloseCircleSharp */
-  height="25"
-  className="hover:fill-[#483d73] transition-all duration-700 ease-in-out" /* Hover effect */
->
-  <circle cx="12" cy="12" r="12" fill="#3a2a79" /> {/* Circle background */}
-  <path
-    fill="none"
-    stroke="white"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    d="M15.536 8.464L12 12m0 0L8.464 8.464m3.536 3.536L8.464 15.536m3.536-3.536l3.536 3.536"
-  />
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" fill="#483d73" viewBox="0 0 30 30">
+    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16.414,15 c0,0,3.139,3.139,3.293,3.293c0.391,0.391,0.391,1.024,0,1.414c-0.391,0.391-1.024,0.391-1.414,0C18.139,19.554,15,16.414,15,16.414 s-3.139,3.139-3.293,3.293c-0.391,0.391-1.024,0.391-1.414,0c-0.391-0.391-0.391-1.024,0-1.414C10.446,18.139,13.586,15,13.586,15 s-3.139-3.139-3.293-3.293c-0.391-0.391-0.391-1.024,0-1.414c0.391-0.391,1.024-0.391,1.414,0C11.861,10.446,15,13.586,15,13.586 s3.139-3.139,3.293-3.293c0.391-0.391,1.024-0.391,1.414,0c0.391,0.391,0.391,1.024,0,1.414C19.554,11.861,16.414,15,16.414,15z"></path>
 </svg>
                 </button>
               </div>
@@ -442,16 +427,9 @@ const FeatureProjectPage: React.FC<FeatureProjectProps> = ({}) => {
               className="ml-56 cursor-pointer md:ml-80 absolute bottom-2 right-2 hover:text-[#483d73] transition-all duration-700 ease-in-out"
               onClick={() => openModal(item)}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#3a2a79" /* Fill color */
-                viewBox="0 0 24 24"
-                width="30" /* Size similar to IoAddCircle */
-                height="30"
-                className="hover:fill-[#483d73] transition-all duration-700 ease-in-out" /* Hover effect */
-              >
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-4H7v-2h4V7h2v4h4v2h-4v4z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="#483d73" width="35" height="35" viewBox="0 0 24 24">
+    <path d="M12,2C6.477,2,2,6.477,2,12s4.477,10,10,10s10-4.477,10-10S17.523,2,12,2z M16,13h-3v3c0,0.552-0.448,1-1,1h0 c-0.552,0-1-0.448-1-1v-3H8c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h3V8c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v3h3 c0.552,0,1,0.448,1,1v0C17,12.552,16.552,13,16,13z"></path>
+</svg>
             </button>
           </div>
         ))}
